@@ -2,7 +2,7 @@
 VApp(dark)
   VNavigationDrawer(v-model='drawer' clipped fixed app)
     VList
-      VListItem(v-for='(item, i) in items' :key='i' :to='item.to' router exact)
+      VListItem(v-for='(item, i) in items' :key='i' :to='item.to' router)
         VListItemAction
           VIcon {{ item.icon }}
         VListItemContent
@@ -17,7 +17,7 @@ VApp(dark)
       nuxt
     VFooter
       VContainer.text-center
-        span &copy; {{ new Date().getFullYear() }}
+        span &copy; 1989 - {{ new Date().getFullYear() }}
 </template>
 
 <script>
@@ -27,17 +27,17 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-home',
+          title: 'Home',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'mdi-post',
+          title: 'Blog',
+          to: '/blog'
         }
       ],
-      title: 'Vuetify.js'
+      title: 'Thom Bruce'
     }
   }
 }
