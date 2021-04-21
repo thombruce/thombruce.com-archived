@@ -1,3 +1,5 @@
+import webpack from 'webpack'
+
 import colors from 'vuetify/es5/util/colors'
 
 export default {
@@ -79,5 +81,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        // global modules
+        _: 'lodash'
+      })
+    ]
   }
 }

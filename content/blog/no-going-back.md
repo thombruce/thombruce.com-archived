@@ -2,7 +2,8 @@
 title: No Going Back
 description: 'On restarting my blog from scratch every few months, and not wanting to do that again.'
 createdAt: 2021-04-19T08:15:10Z
-categories: []
+categories:
+  - Journal
 series: []
 tags: []
 ---

@@ -2,7 +2,8 @@
 title: Anatomy of a Blog Post
 description: 'In which I consider the attributes required to sort and associate posts in my blog content files.'
 createdAt: 2021-04-19T10:15:19Z
-categories: []
+categories:
+  - Journal
 series: []
 tags: []
 ---
