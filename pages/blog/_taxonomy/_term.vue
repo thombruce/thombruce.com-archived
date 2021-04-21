@@ -1,6 +1,6 @@
 <template lang='pug'>
 article
-  h1 {{ category.title }}
+  h1 {{ term.title }}
   div
     article(v-for='article in articles')
       h2
@@ -12,14 +12,16 @@ article
 <script>
 export default {
   async asyncData({ $content, store, params }) {
-    const category = await store.dispatch('blog/categories/find', params.slug)
+    const taxonomy = params.taxonomy
+
+    const term = await store.dispatch('blog/taxonomies/find', { taxonomy, slug: params.term })
 
     const articles = await $content('blog')
-      .where({ categories: { $contains: category.title } })
+      .where({ [taxonomy]: { $contains: term.title } })
       .sortBy('createdAt', 'desc')
       .fetch()
 
-    return { category, articles }
+    return { taxonomy, term, articles }
   }
 }
 </script>
