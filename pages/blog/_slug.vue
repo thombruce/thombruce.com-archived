@@ -1,6 +1,8 @@
 <template lang='pug'>
 article
-  h1 {{ article.title }}
+  header
+    h1 {{ article.title }}
+    time.info--text(:datetime='article.createdAt') {{ article.createdAt }}
   NuxtContent(:document='article')
 </template>
 
