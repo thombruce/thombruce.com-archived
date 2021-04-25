@@ -1,5 +1,5 @@
 <template lang='pug'>
-VApp(dark)
+VApp
   VNavigationDrawer(v-model='drawer' clipped fixed app)
     VList
       VListItem(v-for='(item, i) in items' :key='i' :to='item.to' router)
@@ -11,6 +11,8 @@ VApp(dark)
   VAppBar(clipped-left fixed app)
     VAppBarNavIcon(@click.stop='drawer = !drawer')
     VToolbarTitle(v-text='title')
+    VSpacer
+    VDarkmodeToggle
 
   VMain
     VContainer
