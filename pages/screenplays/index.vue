@@ -1,30 +1,22 @@
 <template lang='pug'>
 div
-  article(v-for='(val, key) in collection')
-    h1(v-if='!Array.isArray(val)')
-      NuxtLink(:to='val') {{ val.title }}
-    h1(v-else)
-      NuxtLink(:to='`screenplays/${key}`') {{ key | titleize }}
+  article(v-for='screenplay in screenplays')
+    div(v-if='!screenplay.collection')
+      h1
+        NuxtLink(:to='screenplay') {{ screenplay.title }}
+      time.info--text(v-if='screenplay.date' :datetime='screenplay.date') {{ screenplay.date }}
+    div(v-else)
+      h1
+        NuxtLink(:to='`screenplays/${screenplay.slug}`') {{ screenplay.slug | titleize }}
+      time.info--text(v-if='screenplay.date' :datetime='screenplay.date') {{ screenplay.date }}
 </template>
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const screenplays = await $content('screenplays', { deep: true })
-      .fetch()
+  async asyncData({ store }) {
+    const screenplays = await store.dispatch('screenplays/all')
 
-    const collection = screenplays.reduce((obj, screenplay) => {
-      if (screenplay.dir === '/screenplays') {
-        obj[screenplay.slug] = screenplay
-      } else {
-        let slug = screenplay.dir.split('/').pop()
-        obj[slug] = obj[slug] || []
-        obj[slug].push(screenplay)
-      }
-      return obj
-    }, {})
-
-    return { collection, screenplays }
+    return { screenplays }
   }
 }
 </script>

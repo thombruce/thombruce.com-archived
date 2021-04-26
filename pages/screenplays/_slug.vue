@@ -5,12 +5,15 @@ div
   article(v-else v-for='screenplay in screenplay')
     h1
       NuxtLink(:to='screenplay') {{ screenplay.title }}
+    time.info--text(v-if='screenplay.date' :datetime='screenplay.date') {{ screenplay.date }}
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const screenplay = await $content('screenplays', params.slug).fetch()
+    const screenplay = await $content('screenplays', params.slug)
+      .sortBy('date', 'asc')
+      .fetch()
 
     return { screenplay }
   }
