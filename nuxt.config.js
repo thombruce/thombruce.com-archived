@@ -2,6 +2,12 @@ import webpack from 'webpack'
 
 import colors from 'vuetify/es5/util/colors'
 
+const fountain = require('@thombruce/fountain.js')
+
+const parseFountain = file => fountain.parse(file, function (output) {
+  return { ...output, ...{ date: new Date(output.date) } } // { title: '', html: { title_page: '', script: '' } }
+})
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -26,6 +32,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~plugins/filters.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -59,7 +66,11 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    extendParser: {
+      '.fountain': parseFountain
+    }
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

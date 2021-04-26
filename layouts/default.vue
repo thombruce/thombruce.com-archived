@@ -37,6 +37,11 @@ export default {
           icon: 'mdi-post',
           title: 'Blog',
           to: '/blog'
+        },
+        {
+          icon: 'mdi-movie',
+          title: 'Screenplays',
+          to: '/screenplays'
         }
       ],
       title: 'Thom Bruce'
