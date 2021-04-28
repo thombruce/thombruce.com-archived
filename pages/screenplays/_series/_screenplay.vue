@@ -5,7 +5,7 @@ NuxtScreenplay(:screenplay='screenplay')
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const screenplay = await $content('screenplays', params.series, params.slug).fetch()
+    const screenplay = await $content('screenplays', params.series, params.screenplay).fetch()
 
     return { screenplay }
   }

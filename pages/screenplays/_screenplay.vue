@@ -11,7 +11,7 @@ div
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const screenplay = await $content('screenplays', params.slug)
+    const screenplay = await $content('screenplays', params.screenplay)
       .sortBy('date', 'asc')
       .fetch()
 

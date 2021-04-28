@@ -17,7 +17,7 @@ article
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('blog', params.slug).fetch()
+    const article = await $content('blog', params.post).fetch()
 
     return { article }
   }
