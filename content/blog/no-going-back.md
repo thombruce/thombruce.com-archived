@@ -4,8 +4,12 @@ description: 'On restarting my blog from scratch every few months, and not wanti
 createdAt: 2021-04-19T08:15:10Z
 categories:
   - Journal
-series: []
-tags: []
+series:
+  - Getting Started
+tags:
+  - Blogging
+  - Markdown
+  - Nuxt.js
 ---
 
 Hi, and welcome to the one-thousand-three-hundred-and-thirty-seventh iteration of my blog. Okay, granted, that's a little bit of an exaggeration, but I really do have a _starting over_ problem. I keep on beginning new versions of my blog as I decide that I want to move to a new technology or I want to organise things a little differently. The first blog I actually wrote was a very long time ago; it was on MySpace, if you remember that website - a social platform from the _Before Facebook_ times. As I became more and more interested in making websites, I moved to WordPress, then I considered more sophisticated CMS platforms like Joomla. Eventually, I became a full-fledged web developer writing my own platforms in Ruby on Rails. Each step of this progression offered me more and more freedom and control; control to have my website behave a certain way, to do more technically difficult but really quite interesting things. And now... Now I've taken a few steps backwards.

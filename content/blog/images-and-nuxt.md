@@ -4,8 +4,12 @@ description: 'Adding image support to my Nuxt blog.'
 createdAt: 2021-04-25T12:27:27Z
 categories:
   - Journal
-series: []
-tags: []
+series:
+  - Getting Started
+tags:
+  - Blogging
+  - Images
+  - Markdown
 image: /uploads/rirri-p_swqcXUc1k-unsplash.jpg
 ---
 

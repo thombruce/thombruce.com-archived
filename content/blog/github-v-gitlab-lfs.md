@@ -4,8 +4,12 @@ description: 'My choice of a Git remote.'
 createdAt: 2021-04-27T11:24:19Z
 categories:
   - Journal
-series: []
-tags: []
+series:
+  - Getting Started
+tags:
+  - GitHub
+  - GitLab
+  - Git LFS
 ---
 
 At the time of writing, this website - despite my having written three blog posts already here - is not online. I've been writing content to roughly describe some thought processes as I develop the site itself, and now the next step is to take it online.

@@ -4,8 +4,12 @@ description: 'In which I consider the attributes required to sort and associate 
 createdAt: 2021-04-19T10:15:19Z
 categories:
   - Journal
-series: []
-tags: []
+series:
+  - Getting Started
+tags:
+  - Blogging
+  - Nuxt.js
+  - Markdown
 ---
 
 In my last entry, I talked about my decision to use Markdown to write my blog posts and briefly touched on my use of a Static Site Generator, [Nuxt.js](https://nuxtjs.org/). Nuxt is extraordinarily agnostic about what those Markdown files should look like, however. In fact, it supports numerous file formats as well as Markdown and doesn't really express much of a preference. It does, however, come with an example Markdown file with a structure a little like this:
