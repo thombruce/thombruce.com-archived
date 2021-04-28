@@ -42,6 +42,11 @@ export default {
           icon: 'mdi-movie',
           title: 'Screenplays',
           to: '/screenplays'
+        },
+        {
+          icon: 'mdi-bookshelf',
+          title: 'Collection',
+          to: '/collection'
         }
       ],
       title: 'Thom Bruce'
