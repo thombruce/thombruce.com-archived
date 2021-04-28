@@ -10,7 +10,7 @@ tags:
   - Blogging
   - Images
   - Markdown
-image: /uploads/rirri-p_swqcXUc1k-unsplash.jpg
+image: /uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg
 ---
 
 I don't believe that any decent blogging software would be complete without support for images. Markdown has this baked-in with syntax that looks a little like this: `![](/path-to-image.jpg)`. Nuxt too could immediately support this syntax if I simply placed images into its `/static` directory, but... this approach wouldn't support image processing by default. The images would be loaded at their native size, regardless of the context they're being displayed in - whether that be on a mobile phone or a large desktop screen. The result would be some unnecessarily large files being loaded for mobile, and little in the way of control of the image content elsewhere.
@@ -42,34 +42,34 @@ _Note: It is sort of poor practice to load the same image twice; if I want it tw
 ### An image at 50vw
 
 ```md
-<NuxtImg src='/uploads/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></NuxtImg>
+<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></NuxtImg>
 ```
 
 How it looks:
 
-<NuxtImg src='/uploads/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></NuxtImg>
+<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></NuxtImg>
 
 ### The same image at 25vw
 
 ```md
-<NuxtImg src='/uploads/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></NuxtImg>
+<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></NuxtImg>
 ```
 
 How it looks:
 
-<NuxtImg src='/uploads/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></NuxtImg>
+<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></NuxtImg>
 
 As stated in the note above, it's a little redundant to load the same image twice here at two separate sizes. An alternative to loading the second image would be to do the following:
 
 ```md
-<NuxtImg src='/uploads/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></NuxtImg>
+<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></NuxtImg>
 ```
 
 Instead of loading a separate, smaller version of the image, this would load the same version as the initial tag. The size as displayed is then controlled by CSS in the `style` attribute instead.
 
 The result looks much the same:
 
-<NuxtImg src='/uploads/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></NuxtImg>
+<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></NuxtImg>
 
 The aim of course is always to only load precisely what is needed, and no more.
 

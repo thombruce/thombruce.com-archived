@@ -1,5 +1,5 @@
 ---
 title: 'Avengers: Endgame'
 releasedAt: 2019-04-25
-image: /uploads/avengers-endgame.jpeg
+image: /uploads/collection/avengers-endgame.jpeg
 ---
