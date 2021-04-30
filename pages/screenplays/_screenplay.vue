@@ -1,11 +1,14 @@
 <template lang='pug'>
 div
-  NuxtScreenplay(v-if='!Array.isArray(screenplay)' :screenplay='screenplay')
+  NuxtScreenplay(v-if='document' :screenplay='document')
 
-  article(v-else v-for='screenplay in screenplay')
-    h1
-      NuxtLink(:to='screenplay') {{ screenplay.title }}
-    time.info--text(v-if='screenplay.date' :datetime='screenplay.date') {{ screenplay.date }}
+  VRow(v-else)
+    VCol(v-for='episode in screenplay' :key='episode.slug' cols='12' sm='6' md='4')
+      article
+        VCard(:to='episode')
+          VCardTitle {{ episode.title }}
+          VCardText
+            time.info--text(v-if='episode.date' :datetime='episode.date') {{ episode.date }}
 </template>
 
 <script>
@@ -15,7 +18,10 @@ export default {
       .sortBy('date', 'asc')
       .fetch()
 
-    return { screenplay }
+    let document = null
+    if (!Array.isArray(screenplay)) document = await $content(screenplay.document).fetch()
+
+    return { screenplay, document }
   }
 }
 </script>

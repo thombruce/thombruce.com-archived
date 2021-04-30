@@ -1,5 +1,5 @@
 <template lang='pug'>
-NuxtScreenplay(:screenplay='screenplay')
+NuxtScreenplay(:screenplay='document')
 </template>
 
 <script>
@@ -7,7 +7,9 @@ export default {
   async asyncData({ $content, params }) {
     const screenplay = await $content('screenplays', params.series, params.screenplay).fetch()
 
-    return { screenplay }
+    const document = await $content(screenplay.document).fetch()
+
+    return { screenplay, document }
   }
 }
 </script>
