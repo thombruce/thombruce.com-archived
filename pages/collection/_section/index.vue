@@ -1,19 +1,18 @@
 <template lang='pug'>
 VRow
-  VCol.col-3(v-for='item in collection')
+  VCol(v-for='item in collection' :key='item.slug' cols='12' sm='6' md='4')
     article
-      VCard(:to='item' height='350')
-        NuxtImg.v-responsive(
+      VCard(:to='item')
+        VImg.white--text.align-end(
           v-if='item.image'
-          :src='item.image'
-          sizes='sm:100vw md:50vw lg:25vw'
-          style='width:100%;height:200px;object-fit:cover;'
+          :src='$img(item.image, { width: `600px` })'
+          gradient='to bottom left, rgba(33,33,33,.2), rgba(11,11,11,.6)'
         )
+          VCardTitle
+            span {{ item.title }}
 
-        VCardTitle {{ item.title }}
-
-        VCardText
-          time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
+          VCardText
+            time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
 </template>
 
 <script>
@@ -27,3 +26,20 @@ export default {
   }
 }
 </script>
+
+<style lang='scss'>
+.v-card {
+  .v-image {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+
+    .v-card__title {
+      span {
+        white-space:nowrap;
+        overflow:hidden;
+      }
+    }
+  }
+}
+</style>
