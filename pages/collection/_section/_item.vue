@@ -1,7 +1,7 @@
 <template lang='pug'>
 article
   header
-    VParallax(:src='$img(item.image, { width: `100vw` })')
+    VParallax(v-if='item.image' :src='$img(item.image, { width: `100vw` })')
 
     h1 {{ item.title }}
 

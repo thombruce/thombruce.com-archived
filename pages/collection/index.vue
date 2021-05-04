@@ -13,6 +13,12 @@ VRow
 
           VCardText
             time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
+        .no-image(v-else)
+          VCardTitle
+            span {{ item.title }}
+
+          VCardText
+            time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
 </template>
 
 <script>
@@ -29,6 +35,10 @@ export default {
 
 <style lang='scss'>
 .v-card {
+  > .no-image {
+    height:200px;
+  }
+
   .v-image {
     width:100%;
     height:200px;
