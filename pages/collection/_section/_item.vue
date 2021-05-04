@@ -1,13 +1,14 @@
 <template lang='pug'>
-VContainer
-  article
-    header
-      VParallax(v-if='item.image' :src='$img(item.image, { width: `100vw` })')
+article
+  header
+    VParallax(v-if='item.image' :src='$img(item.image, { width: `100vw` })')
 
+    VContainer
       h1 {{ item.title }}
 
       time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
 
+  VContainer
     NuxtContent(:document='item')
 </template>
 
