@@ -1,18 +1,19 @@
 <template lang='pug'>
-VRow
-  VCol(v-for='item in collection' :key='item.slug' cols='12' sm='6' md='4')
-    article
-      VCard(:to='item')
-        VImg.white--text.align-end(
-          v-if='item.image'
-          :src='$img(item.image, { width: `600px` })'
-          gradient='to bottom left, rgba(33,33,33,.2), rgba(11,11,11,.6)'
-        )
-          VCardTitle
-            span {{ item.title }}
+VContainer
+  VRow
+    VCol(v-for='item in collection' :key='item.slug' cols='12' sm='6' md='4')
+      article
+        VCard(:to='item')
+          VImg.white--text.align-end(
+            v-if='item.image'
+            :src='$img(item.image, { width: `600px` })'
+            gradient='to bottom left, rgba(33,33,33,.2), rgba(11,11,11,.6)'
+          )
+            VCardTitle
+              span {{ item.title }}
 
-          VCardText
-            time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
+            VCardText
+              time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
 </template>
 
 <script>

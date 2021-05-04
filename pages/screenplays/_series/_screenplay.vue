@@ -1,5 +1,6 @@
 <template lang='pug'>
-NuxtScreenplay(:screenplay='document')
+VContainer
+  NuxtScreenplay(:screenplay='document')
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template lang='pug'>
-div
+VContainer
   NuxtScreenplay(v-if='document' :screenplay='document')
 
   VRow(v-else)

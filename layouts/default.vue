@@ -15,8 +15,7 @@ VApp
     VDarkmodeToggle
 
   VMain
-    VContainer
-      nuxt
+    Nuxt
     VFooter
       VContainer.text-center
         span &copy; 1989 - {{ new Date().getFullYear() }}

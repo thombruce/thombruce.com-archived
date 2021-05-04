@@ -1,9 +1,10 @@
 <template lang='pug'>
-VRow
-  VCol(cols='12' sm='6' md='4' lg='3')
-    BruCalendarDay
-  VCol
-    VCalendar(:weekdays='[1, 2, 3, 4, 5, 6, 0]' color='red')
+VContainer
+  VRow
+    VCol(cols='12' sm='6' md='4' lg='3')
+      BruCalendarDay
+    VCol
+      VCalendar(:weekdays='[1, 2, 3, 4, 5, 6, 0]' color='red')
 </template>
 
 <script>

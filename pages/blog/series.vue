@@ -1,10 +1,11 @@
 <template lang='pug'>
-article
-  h1 Series
-  div
-    article(v-for='term in terms')
-      h2
-        NuxtLink(:to='{ name: `blog-taxonomy-term`, params: { taxonomy, term: term.slug } }') {{ term.title }}
+VContainer
+  article
+    h1 Series
+    div
+      article(v-for='term in terms')
+        h2
+          NuxtLink(:to='{ name: `blog-taxonomy-term`, params: { taxonomy, term: term.slug } }') {{ term.title }}
 </template>
 
 <script>

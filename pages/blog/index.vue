@@ -1,5 +1,5 @@
 <template lang='pug'>
-div
+VContainer
   article(v-for='article in articles')
     h1
       NuxtLink(:to='article') {{ article.title }}
