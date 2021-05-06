@@ -1,4 +1,4 @@
 ---
 title: 'Loki'
-releasedAt: 2021-06-11
+releasedAt: 2021-06-09
 ---
