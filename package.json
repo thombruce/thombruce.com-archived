@@ -16,7 +16,7 @@
     "core-js": "^3.9.1",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.3",
-    "vue-timepiece": "https://github.com/thombruce/vue-timepiece"
+    "timepiece.vue": "https://github.com/thombruce/timepiece.vue"
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.7",

@@ -11,7 +11,7 @@ article
   VContainer
     NuxtContent(:document='item')
     .text-h1.text-center
-      TimepieceCountdown(
+      VCountdown(
         :date='item.releasedAt'
         :leadingZeroes='{ hours: true, minutes: true, seconds: true }'
         daysSeparator='&nbsp;days '
@@ -22,11 +22,11 @@ article
 </template>
 
 <script>
-import TimepieceCountdown from 'vue-timepiece/src/components/TimepieceCountdown/TimepieceCountdown.vue'
+import VCountdown from 'timepiece.vue/src/components/Countdown/VCountdown.vue'
 
 export default {
   components: {
-    TimepieceCountdown
+    VCountdown
   },
   async asyncData({ $content, params }) {
     const item = await $content('collection', params.section, params.item).fetch()
