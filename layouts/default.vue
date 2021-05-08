@@ -38,6 +38,11 @@ export default {
           to: '/blog'
         },
         {
+          icon: 'mdi-code-tags',
+          title: 'Code',
+          to: '/code'
+        },
+        {
           icon: 'mdi-movie',
           title: 'Screenplays',
           to: '/screenplays'
