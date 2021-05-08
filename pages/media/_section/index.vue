@@ -1,7 +1,7 @@
 <template lang='pug'>
 VContainer
   VRow
-    VCol(v-for='item in collection' :key='item.slug' cols='12' sm='6' md='4')
+    VCol(v-for='item in media' :key='item.slug' cols='12' sm='6' md='4')
       article
         VCard(:to='item')
           VImg.white--text.align-end(
@@ -19,11 +19,11 @@ VContainer
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const collection = await $content('collection', params.section, { deep: true })
+    const media = await $content('media', params.section, { deep: true })
       .sortBy('releasedAt', 'desc')
       .fetch()
 
-    return { collection }
+    return { media }
   }
 }
 </script>

@@ -29,7 +29,7 @@ export default {
     VCountdown
   },
   async asyncData({ $content, params }) {
-    const item = await $content('collection', params.section, params.item).fetch()
+    const item = await $content('media', params.section, params.item).fetch()
 
     return { item }
   }
