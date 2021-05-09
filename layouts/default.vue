@@ -46,11 +46,6 @@ export default {
           icon: 'mdi-movie',
           title: 'Screenplays',
           to: '/screenplays'
-        },
-        {
-          icon: 'mdi-filmstrip',
-          title: 'Media',
-          to: '/media'
         }
       ],
       title: 'Thom Bruce'
