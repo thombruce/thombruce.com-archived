@@ -3,7 +3,7 @@ article
   VCard(nuxt :to='cardItem' :style='cardBackground')
     .d-flex.flex-no-wrap
       .ma-3(v-if='cardItem.image')
-        NuxtImg(:src='cardItem.image' sizes="sm:100px")
+        NuxtImg(:src='cardItem.image' width='100')
 
       div
         VCardTitle
