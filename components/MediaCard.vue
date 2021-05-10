@@ -1,47 +1,41 @@
 <template lang='pug'>
 article
-  VCard(:to='item')
-    VImg.white--text.align-end(
-      v-if='item.image'
-      :src='$img(item.image, { width: `600px` })'
-      gradient='to bottom left, rgba(33,33,33,.2), rgba(11,11,11,.6)'
-    )
-      VCardTitle
-        span {{ item.title }}
+  VCard(nuxt :to='cardItem' :style='cardBackground')
+    .d-flex.flex-no-wrap
+      .ma-3(v-if='cardItem.image')
+        NuxtImg(:src='cardItem.image' sizes="sm:100px")
 
-      VCardText
-        time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
-    .no-image(v-else)
-      VCardTitle
-        span {{ item.title }}
+      div
+        VCardTitle
+          span {{ cardItem.title }}
 
-      VCardText
-        time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
+        VCardText
+          time.info--text(:datetime='cardItem.releasedAt') {{ cardItem.releasedAt }}
 </template>
 
 <script>
 export default {
-  props: ['item']
-}
-</script>
-
-<style lang='scss'>
-.v-card {
-  > .no-image {
-    height:200px;
-  }
-
-  .v-image {
-    width:100%;
-    height:200px;
-    object-fit:cover;
-
-    .v-card__title {
-      span {
-        white-space:nowrap;
-        overflow:hidden;
-      }
+  props: [
+    'item'
+  ],
+  data () {
+    return {
+      cardItem: {}
+    }
+  },
+  computed: {
+    cardBackground () {
+      return `background: linear-gradient(to bottom, rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.8), rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.5)), url(${this.cardItem.image}) center center / cover no-repeat`
+    }
+  },
+  async created () {
+    if (typeof this.item === 'string') {
+      this.cardItem = await this.$content('media', this.item).fetch()
+    } else {
+      this.cardItem = this.item
     }
   }
 }
-</style>
+</script>
+
+<style lang='scss'></style>
