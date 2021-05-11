@@ -19,7 +19,7 @@
     "timepiece.vue": "https://github.com/thombruce/timepiece.vue"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.4.7",
+    "@nuxt/image": "^0.4.8",
     "@nuxtjs/vuetify": "^1.11.3",
     "fibers": "^5.0.0",
     "pug": "^3.0.2",
