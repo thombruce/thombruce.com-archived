@@ -1,6 +1,14 @@
 ---
 title: My Star Wars Viewing Order
+description: 'My approach to rewatching the Star Wars saga.'
 createdAt: 2021-05-10T18:26:11Z
+categories:
+  - Culture
+series:
+  - May the 4th Be With You 2021
+tags:
+  - Star Wars
+  - Film
 ---
 
 ## 1. Rogue One: A Star Wars Story
