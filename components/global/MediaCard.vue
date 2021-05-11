@@ -26,7 +26,7 @@ export default {
   computed: {
     cardBackground () {
       if (this.cardItem.image) {
-        return `background: linear-gradient(to bottom, rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.8), rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.5)), url(${this.$img(this.cardItem.image, { width: `100vw` })}) center center / cover no-repeat`
+        return `background: linear-gradient(to bottom, rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.8), rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.5)), url(${this.$img(this.cardItem.image, { width: `1200`, height: `500` })}) center center / cover no-repeat`
       }
     }
   },
