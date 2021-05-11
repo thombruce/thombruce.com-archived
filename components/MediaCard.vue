@@ -3,7 +3,7 @@ article
   VCard(nuxt :to='cardItem' :style='cardBackground')
     .d-flex.flex-no-wrap
       .ma-3(v-if='cardItem.image')
-        NuxtImg(:src='cardItem.image' width='100')
+        VImg(:src='$img(cardItem.image, { width: `100` })')
 
       div
         VCardTitle
@@ -25,7 +25,9 @@ export default {
   },
   computed: {
     cardBackground () {
-      return `background: linear-gradient(to bottom, rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.8), rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.5)), url(${this.cardItem.image}) center center / cover no-repeat`
+      if (this.cardItem.image) {
+        return `background: linear-gradient(to bottom, rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.8), rgba(${this.$vuetify.theme.dark ? '0,0,0' : '255,255,255'},.5)), url(${this.$img(this.cardItem.image, { width: `100vw` })}) center center / cover no-repeat`
+      }
     }
   },
   async created () {
