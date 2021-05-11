@@ -14,13 +14,6 @@ article
 </template>
 
 <script>
-// Let me attempt to explain why images are probably nlt behaving as we would like/expect...
-
-// The component is simply not being deeply rendered during generation? But is showing on the live site?
-// So it works in a dev environment, but... not live.
-
-// Hmm... Nuxt Generate totally works locally though. :\
-
 export default {
   props: [
     'item'
@@ -37,7 +30,7 @@ export default {
       }
     }
   },
-  async created () {
+  async fetch () {
     if (typeof this.item === 'string') {
       this.cardItem = await this.$content('media', this.item).fetch()
     } else {
