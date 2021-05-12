@@ -28,7 +28,7 @@ export default {
     async submit () {
       await this.$axios.$post(
         'https://thombruce-staticman.herokuapp.com/v3/entry/gitlab/thombruce/thombruce.com/master/comments',
-        comment
+        this.comment
       )
     }
   }
