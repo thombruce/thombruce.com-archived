@@ -10,6 +10,9 @@ article
 
   VContainer
     NuxtContent(:document='article')
+
+  VContainer
+    CommentForm(:path='article.path')
 </template>
 
 <script>
