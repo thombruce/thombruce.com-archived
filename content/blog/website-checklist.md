@@ -15,6 +15,14 @@ tags:
   - Upptime
 ---
 
+- [x] Domain
+
+I purchased my domain, thombruce.com, from [Namecheap](https://www.namecheap.com/).
+
+- [x] DNS
+
+The DNS at Namecheap wasn't stellar, so I hooked up my domain's DNS with [Cloudflare](https://www.cloudflare.com/).
+
 - [x] Basic Website
 
 Nuxt.js
@@ -38,3 +46,7 @@ Nuxt Content
 - [ ] Content Management System
 
 At present I'm just using a code editor, Visual Studio Code, but I have plans to develop a separate CMS.
+
+- [ ] Site Interactivity (Comments, etc.)
+
+I'd like to add some basic interactivity to ThomBruce.com. For this, I'm thinking of installing [Staticman](https://staticman.net/). Staticman would allow users to add comments; they'd take a minute to appear as live on the website because Staticman would send them to the static site generator, so this wouldn't do for a live chat or anything like that, but for comments, maybe a guestbook? It could work.
