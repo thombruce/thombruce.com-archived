@@ -27,9 +27,9 @@ GitHub/GitLab
 
 ThomBruce.com is being hosted by Netlify.
 
-- [ ] Uptime Monitoring and Status Page
+- [x] Uptime Monitoring and Status Page
 
-Formerly, I've monitored my websites using [UptimeRobot](https://uptimerobot.com/).
+Formerly, I've monitored my websites using [UptimeRobot](https://uptimerobot.com/). My new status page at [status.thombruce.com](https://status.thombruce.com/) uses [Upptime](https://upptime.js.org/).
 
 - [x] Content
 
