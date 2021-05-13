@@ -12,7 +12,7 @@ VApp
     VAppBarNavIcon(@click.stop='drawer = !drawer')
     VToolbarTitle(v-text='title')
     VSpacer
-    VDarkmodeToggle
+    // VDarkmodeToggle
 
   VMain
     Nuxt
