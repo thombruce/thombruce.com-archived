@@ -1,5 +1,6 @@
 <template lang='pug'>
 VForm(:model='comment' @submit.prevent='submit()')
+  h3.text-h6 New Comment
   VTextField(v-model='comment.name' label='Name' required)
   VTextarea(v-model='comment.message' label='Comment' required)
   VBtn(color="primary" type="submit") Submit
