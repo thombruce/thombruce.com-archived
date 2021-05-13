@@ -1,7 +1,7 @@
 <template lang='pug'>
-VForm(:model='comment.fields' @submit.prevent='submit()')
-  VTextField(v-model='comment.fields.name' label='Name' required)
-  VTextarea(v-model='comment.fields.message' label='Comment' required)
+VForm(:model='comment' @submit.prevent='submit()')
+  VTextField(v-model='comment.name' label='Name' required)
+  VTextarea(v-model='comment.message' label='Comment' required)
   VBtn(color="primary" type="submit") Submit
 </template>
 
@@ -13,13 +13,11 @@ export default {
   data () {
     return {
       comment: {
-        fields: {
-          name: '',
-          message: ''
-        },
-        options: {
-          path: this.path
-        }
+        name: '',
+        message: ''
+      },
+      options: {
+        path: this.path
       }
     }
   },
@@ -27,8 +25,8 @@ export default {
   methods: {
     async submit () {
       await this.$axios.$post(
-        'https://thombruce-staticman.herokuapp.com/v3/entry/gitlab/thombruce/thombruce.com/master/comments',
-        this.comment
+        'https://thombruce-staticman.herokuapp.com/v3/entry/gitlab/thombruce/thombruce.com/main/comments',
+        { fields: this.comment, options: this.options }
       )
     }
   }
