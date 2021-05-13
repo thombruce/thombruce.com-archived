@@ -47,6 +47,6 @@ Nuxt Content
 
 At present I'm just using a code editor, Visual Studio Code, but I have plans to develop a separate CMS.
 
-- [ ] Site Interactivity (Comments, etc.)
+- [x] Site Interactivity (Comments, etc.)
 
-I'd like to add some basic interactivity to ThomBruce.com. For this, I'm thinking of installing [Staticman](https://staticman.net/). Staticman would allow users to add comments; they'd take a minute to appear as live on the website because Staticman would send them to the static site generator, so this wouldn't do for a live chat or anything like that, but for comments, maybe a guestbook? It could work.
+I'd like to add some basic interactivity to ThomBruce.com. For this, I'm thinking of installing [Staticman](https://staticman.net/). Staticman would allow users to add comments; they'd take a minute to appear as live on the website because Staticman would send them to the static site generator, so this wouldn't do for a live chat or anything like that, but for comments, maybe a guestbook? It could work. That's comments covered by Staticman, but it leaves a bit to be desired and certain interactions will be impossible with that as the backend - this remains to be looked at further.
