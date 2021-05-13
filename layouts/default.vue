@@ -48,6 +48,11 @@ export default {
           to: '/screenplays'
         },
         {
+          icon: 'mdi-book-open-variant',
+          title: 'Guestbook',
+          to: '/guestbook'
+        },
+        {
           icon: 'mdi-information',
           title: 'About',
           to: '/about'
