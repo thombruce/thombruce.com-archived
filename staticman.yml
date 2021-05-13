@@ -75,3 +75,23 @@ comments:
   # the name of the field and values are possible transformation types.
   # transforms:
   #   email: md5
+
+guestbook:
+  # (*) REQUIRED
+  allowedFields: ["name", "message"]
+  # (*) REQUIRED
+  branch: "main"
+  commitMessage: "New guest"
+  # (*) REQUIRED
+  filename: "{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    createdAt:
+      type: date
+      options:
+        format: "iso8601"
+  moderation: false
+  name: "thombruce.com"
+  # (*) REQUIRED
+  path: "content/_data/guestbook"
+  requiredFields: ["name", "message"]
