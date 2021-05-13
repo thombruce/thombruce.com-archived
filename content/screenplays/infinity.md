@@ -1,5 +1,5 @@
 ---
 title: Infinity
 date: 2008-05-01
-document: _documents/screenplays/infinity
+document: _data/screenplays/infinity
 ---
