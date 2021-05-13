@@ -21,32 +21,3 @@ export default {
   }
 }
 </script>
-
-<style lang='scss'>
-@import 'vuetify/src/components/VResponsive/VResponsive';
-
-// NuxtContent
-.nuxt-content {
-  img {
-    @extend .v-responsive;
-    margin: 0 auto;
-  }
-  hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  ul.contains-task-list {
-    padding-left: 5px;
-    li.task-list-item {
-      list-style-type: none;
-    }
-  }
-  pre code {
-    all: unset; // Vuetify reset
-    color: #eee; // Vuetify reset
-    .blockquote {
-      padding: 0; // Vuetify reset
-    }
-  }
-}
-</style>
