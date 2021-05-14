@@ -1,5 +1,5 @@
 <template lang='pug'>
-VApp(dark)
+div
   h1(v-if='error.statusCode === 404')
     | {{ pageNotFound }}
   h1(v-else)
@@ -32,9 +32,3 @@ export default {
   }
 }
 </script>
-
-<style lang='scss' scoped>
-h1 {
-  font-size: 20px;
-}
-</style>
