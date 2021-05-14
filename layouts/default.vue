@@ -2,7 +2,7 @@
 div
   header.flex.bg-red-50
     span.block.font-bold.bg-red-200
-      NuxtLink(to='/broken') {{ title }}
+      NuxtLink(to='/') {{ title }}
     nav.bg-red-100
       ul.flex
         li(v-for='(item, i) in items' :key='i')
