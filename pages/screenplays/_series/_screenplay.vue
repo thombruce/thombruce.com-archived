@@ -1,5 +1,5 @@
 <template lang='pug'>
-VContainer
+div
   NuxtScreenplay(:screenplay='document')
 </template>
 
