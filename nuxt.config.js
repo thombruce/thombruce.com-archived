@@ -42,6 +42,7 @@ export default {
   buildModules: [
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,6 +70,10 @@ export default {
     extendParser: {
       '.fountain': parseFountain
     }
+  },
+
+  colorMode: {
+    classSuffix: ''
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

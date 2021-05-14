@@ -3,13 +3,13 @@ div
   header.flex.bg-red-50
     span.block.font-bold.bg-red-200
       NuxtLink(to='/broken') {{ title }}
-    // VDarkmodeToggle
     nav.bg-red-100
       ul.flex
         li(v-for='(item, i) in items' :key='i')
           NuxtLink.block.px-4(:to='item.to') {{ item.title }}
+    VDarkmodeToggle
 
-  main.bg-yellow-50
+  main.bg-yellow-50(class='dark:bg-gray-800 dark:text-white')
     Nuxt
 
   footer.bg-blue-50
