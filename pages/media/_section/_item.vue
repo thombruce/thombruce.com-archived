@@ -1,16 +1,13 @@
 <template lang='pug'>
 article
   header
-    VParallax(v-if='item.image' :src='$img(item.image, { width: `100vw` })')
+    NuxtImg(v-if='item.image' :src='item.image' width='100vw')
+    h1 {{ item.title }}
+    time(:datetime='item.releasedAt') {{ item.releasedAt }}
 
-    VContainer
-      h1 {{ item.title }}
-
-      time.info--text(:datetime='item.releasedAt') {{ item.releasedAt }}
-
-  VContainer
+  div
     NuxtContent(:document='item')
-    .text-h1.text-center
+    div
       VCountdown(
         :date='item.releasedAt'
         :leadingZeroes='{ hours: true, minutes: true, seconds: true }'

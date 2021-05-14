@@ -1,8 +1,7 @@
 <template lang='pug'>
-VContainer
-  VRow
-    VCol(v-for='item in media' :key='item.slug' cols='12' sm='6' md='4')
-      MediaCard(:item='item')
+div
+  div(v-for='item in media' :key='item.slug')
+    MediaCard(:item='item')
 </template>
 
 <script>
