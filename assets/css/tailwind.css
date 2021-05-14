@@ -1,7 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-body {
-  @apply dark:bg-black dark:text-white;
-}
+@import "./base";
+@import "./nuxt-content";
