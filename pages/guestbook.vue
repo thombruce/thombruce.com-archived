@@ -1,16 +1,17 @@
 <template lang='pug'>
-VContainer
+div
   article
-    h1 Guestbook
-    article(v-for='guest in guestbook')
-      VCard.mb-3
-        VCardTitle
-          h2.text-h6 {{ guest.name }}
-        VCardSubtitle
-          time.info--text(:datetime='guest.createdAt') {{ guest.createdAt }}
-        VCardText
+    header
+      h1 Guestbook
+    div
+      article(v-for='guest in guestbook')
+        header
+          h2 {{ guest.name }}
+          time(:datetime='guest.createdAt') {{ guest.createdAt }}
+        div
           p {{ guest.message }}
-    GuestForm
+    footer
+      GuestForm
 </template>
 
 <script>

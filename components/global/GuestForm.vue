@@ -1,9 +1,14 @@
 <template lang='pug'>
-VForm(:model='guest' @submit.prevent='submit()')
-  h3.text-h6 Say Hello
-  VTextField(v-model='guest.name' label='Name' required)
-  VTextarea(v-model='guest.message' label='Message' required)
-  VBtn(color="primary" type="submit") Submit
+form(:model='guest' @submit.prevent='submit()')
+  h3 Say Hello
+
+  label(for='name') Name
+  input(id='name' v-model='guest.name')
+
+  label(for='message') Message
+  textarea(id='message' v-model='guest.message')
+
+  button(type="submit") Submit
 </template>
 
 <script>
