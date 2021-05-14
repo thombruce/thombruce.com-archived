@@ -1,9 +1,11 @@
 <template lang='pug'>
-VContainer
+div
   article(v-for='project in projects')
-    h1
-      NuxtLink(:to='project') {{ project.title }}
-    p {{ project.description }}
+    header
+      h1
+        NuxtLink(:to='project') {{ project.title }}
+    div
+      p {{ project.description }}
 </template>
 
 <script>

@@ -1,10 +1,9 @@
 <template lang='pug'>
 article
   header
-    VContainer
-      h1 {{ project.title }}
+    h1 {{ project.title }}
 
-  VContainer
+  div
     NuxtContent(:document='project')
 </template>
 
