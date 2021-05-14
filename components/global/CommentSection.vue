@@ -1,12 +1,15 @@
 <template lang='pug'>
-VCard
-  VCardTitle
-    h2.text-h5 Comments
-  VCardText
+section
+  header
+    h2 Comments
+  div
     article(v-for='comment in comments')
-      h3.text-h6 {{ comment.name }}
-      time.info--text(:datetime='comment.createdAt') {{ comment.createdAt }}
-      p(style='white-space: pre-wrap;') {{ comment.message }}
+      header
+        h3 {{ comment.name }}
+        time(:datetime='comment.createdAt') {{ comment.createdAt }}
+      div
+        p(style='white-space: pre-wrap;') {{ comment.message }}
+  footer
     CommentForm(:path='path')
 </template>
 

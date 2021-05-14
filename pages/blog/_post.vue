@@ -1,15 +1,14 @@
 <template lang='pug'>
 article
   header
-    VParallax(v-if='article.image' :src='$img(article.image, { width: `100vw` })')
+    NuxtImg(v-if='article.image' :src='article.image' width='100vw')
+    h1 {{ article.title }}
+    time(:datetime='article.createdAt') {{ article.createdAt }}
 
-    VContainer
-      h1 {{ article.title }}
-
-      time.info--text(:datetime='article.createdAt') {{ article.createdAt }}
-
-  VContainer
+  div
     NuxtContent(:document='article')
+
+  footer
     CommentSection(:path='article.path')
 </template>
 

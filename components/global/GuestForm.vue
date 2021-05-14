@@ -1,5 +1,5 @@
 <template lang='pug'>
-form(:model='guest' @submit.prevent='submit()')
+form(v-model='guest' @submit.prevent='submit()')
   h3 Say Hello
 
   label(for='name') Name
