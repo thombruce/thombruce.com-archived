@@ -2,6 +2,15 @@ body {
   @apply bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-50;
 }
 
+article header {
+  & a {
+    @apply text-blue-500;
+  }
+  & time {
+    @apply text-blue-400;
+  }
+}
+
 table {
   @apply w-full table-fixed text-center;
 }

@@ -2,7 +2,7 @@
 #appContainer
   AppHeader
 
-  main.container.mx-auto
+  main
     Nuxt
 
   AppFooter
