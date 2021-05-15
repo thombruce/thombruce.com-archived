@@ -1,12 +1,13 @@
 <template lang='pug'>
-div
-  article(v-for='article in articles')
-    header
-      h1
-        NuxtLink(:to='article') {{ article.title }}
-      time(:datetime='article.createdAt') {{ article.createdAt }}
-    div
-      p {{ article.description }}
+article
+  div
+    article(v-for='article in articles')
+      header
+        h1
+          NuxtLink(:to='article') {{ article.title }}
+        time(:datetime='article.createdAt') {{ article.createdAt }}
+      div
+        p {{ article.description }}
 </template>
 
 <script>

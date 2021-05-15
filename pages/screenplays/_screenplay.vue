@@ -1,9 +1,11 @@
 <template lang='pug'>
-div
-  NuxtScreenplay(v-if='document' :screenplay='document')
+article(:class='document ? `screenplay` : ``')
+  template(v-if='document')
+    header.title-page(v-html="document.html.title_page")
+    .script(v-html="document.html.script")
 
-  div(v-else v-for='episode in screenplay' :key='episode.slug')
-    article
+  div(v-else)
+    article(v-for='episode in screenplay' :key='episode.slug')
       header
         h2
           NuxtLink(:to='episode') {{ episode.title }}
@@ -24,3 +26,7 @@ export default {
   }
 }
 </script>
+
+<style lang='postcss'>
+@import '~/assets/css/screenplay';
+</style>

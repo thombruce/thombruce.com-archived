@@ -3,5 +3,5 @@ body {
 }
 
 table {
-  @apply w-full table-fixed;
+  @apply w-full table-fixed text-center;
 }

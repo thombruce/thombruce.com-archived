@@ -7,15 +7,14 @@ article
 
   div
     NuxtContent(:document='item')
-    div
-      VCountdown(
-        :date='item.releasedAt'
-        :leadingZeroes='{ hours: true, minutes: true, seconds: true }'
-        daysSeparator='&nbsp;days '
-        hoursSeparator=':'
-        minutesSeparator=':'
-        secondsSeparator=''
-      )
+    VCountdown(
+      :date='item.releasedAt'
+      :leadingZeroes='{ hours: true, minutes: true, seconds: true }'
+      daysSeparator='&nbsp;days '
+      hoursSeparator=':'
+      minutesSeparator=':'
+      secondsSeparator=''
+    )
 </template>
 
 <script>

@@ -1,17 +1,16 @@
 <template lang='pug'>
-div
-  article
-    header
-      h1 Guestbook
-    div
-      article(v-for='guest in guestbook')
-        header
-          h2 {{ guest.name }}
-          time(:datetime='guest.createdAt') {{ guest.createdAt }}
-        div
-          p {{ guest.message }}
-    footer
-      GuestForm
+article
+  header
+    h1 Guestbook
+  div
+    article(v-for='guest in guestbook')
+      header
+        h2 {{ guest.name }}
+        time(:datetime='guest.createdAt') {{ guest.createdAt }}
+      div
+        p {{ guest.message }}
+  footer
+    GuestForm
 </template>
 
 <script>

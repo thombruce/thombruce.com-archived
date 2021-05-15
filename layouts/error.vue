@@ -1,11 +1,13 @@
 <template lang='pug'>
-div
-  h1(v-if='error.statusCode === 404')
-    | {{ pageNotFound }}
-  h1(v-else)
-    | {{ otherError }}
-  NuxtLink(to='/')
-    | Home page
+article
+  header
+    h1(v-if='error.statusCode === 404')
+      | {{ pageNotFound }}
+    h1(v-else)
+      | {{ otherError }}
+  div
+    NuxtLink(to='/')
+      | Home page
 </template>
 
 <script>

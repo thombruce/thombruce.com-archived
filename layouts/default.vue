@@ -1,18 +1,18 @@
 <template lang='pug'>
-div
-  header.flex.bg-red-500
-    span.block.font-bold.bg-red-800
+#appContainer
+  header
+    span
       NuxtLink(to='/') {{ title }}
-    nav.bg-red-700
-      ul.flex
+    nav
+      ul
         li(v-for='(item, i) in items' :key='i')
-          NuxtLink.block.px-4(:to='item.to') {{ item.title }}
+          NuxtLink(:to='item.to') {{ item.title }}
     VDarkmodeToggle
 
-  main.bg-yellow-50(class='dark:bg-gray-800 dark:text-white')
+  main
     Nuxt
 
-  footer.bg-blue-800
+  footer
     span &copy; 1989 - {{ new Date().getFullYear() }}
 </template>
 
@@ -57,3 +57,22 @@ export default {
   }
 }
 </script>
+
+<style lang='postcss'>
+#appContainer {
+  & > header {
+    @apply flex;
+    & > span:first-of-type {
+      @apply block font-bold;
+    }
+    & > nav {
+      & ul {
+        @apply flex;
+        & li a {
+          @apply block px-4;
+        }
+      }
+    }
+  }
+}
+</style>

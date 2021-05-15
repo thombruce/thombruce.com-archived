@@ -1,7 +1,7 @@
 <template lang='pug'>
-div
-  div(v-for='item in media' :key='item.slug')
-    MediaCard(:item='item')
+article
+  div
+    MediaCard(v-for='item in media' :key='item.slug' :item='item')
 </template>
 
 <script>
