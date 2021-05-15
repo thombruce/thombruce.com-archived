@@ -3,7 +3,7 @@ article
   div
     article(v-for='project in projects')
       header
-        h1
+        h2
           NuxtLink(:to='project') {{ project.title }}
       div
         p {{ project.description }}

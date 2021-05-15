@@ -3,7 +3,7 @@ article
   div
     article(v-for='article in articles')
       header
-        h1
+        h2
           NuxtLink(:to='article') {{ article.title }}
         time(:datetime='article.createdAt') {{ article.createdAt }}
       div
