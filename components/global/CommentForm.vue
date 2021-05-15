@@ -2,11 +2,9 @@
 form(v-model='comment' @submit.prevent='submit()')
   h3 New Comment
 
-  label(for='name') Name
-  input(id='name' v-model='comment.name')
+  FormInput(id='commentFormName' label='Name' v-model='comment.name')
 
-  label(for='message') Comment
-  textarea(id='message' v-model='comment.message')
+  FormTextarea(id='commentFormMessage' label='Comment' v-model='comment.message')
 
   button(type="submit") Submit
 </template>

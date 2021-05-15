@@ -2,11 +2,9 @@
 form(v-model='guest' @submit.prevent='submit()')
   h3 Say Hello
 
-  label(for='name') Name
-  input(id='name' v-model='guest.name')
+  FormInput(id='guestbookFormName' label='Name' v-model='guest.name')
 
-  label(for='message') Message
-  textarea(id='message' v-model='guest.message')
+  FormTextarea(id='guestbookFormMessage' label='Message' v-model='guest.message')
 
   button(type="submit") Submit
 </template>
