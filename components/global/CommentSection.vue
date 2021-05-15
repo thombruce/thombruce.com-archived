@@ -24,7 +24,9 @@ export default {
     }
   },
   async fetch () {
-    this.comments = await this.$content('_data', 'comments', this.path).fetch()
+    this.comments = await this.$content('_data', 'comments', this.path)
+      .fetch()
+      .catch(() => {})
   }
 }
 </script>
