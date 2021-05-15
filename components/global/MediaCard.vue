@@ -1,10 +1,11 @@
 <template lang='pug'>
-article
-  header
+article.my-2.rounded.shadow(class='bg-gray-100 dark:bg-gray-900')
+  header.flex
     NuxtImg(v-if='cardItem.image' :src='cardItem.image' sizes='sm:100px' style='width:100px;')
-    h2
-      NuxtLink(:to='cardItem') {{ cardItem.title }}
-    time.info--text(:datetime='cardItem.releasedAt') {{ cardItem.releasedAt }}
+    div.px-4.py-3
+      h2
+        NuxtLink(:to='cardItem') {{ cardItem.title }}
+      time.info--text(:datetime='cardItem.releasedAt') {{ cardItem.releasedAt }}
 </template>
 
 <script>
