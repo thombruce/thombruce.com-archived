@@ -25,6 +25,7 @@ export default {
   },
   async fetch () {
     this.comments = await this.$content('_data', 'comments', this.path)
+      .sortBy('createdAt', 'asc')
       .fetch()
       .catch(() => {})
   }
