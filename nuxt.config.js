@@ -89,7 +89,11 @@ export default {
         'faSun',
         'faMoon'
       ],
-      // brands: true // TODO: List only the icons used!
+      brands: [
+        'faFacebook',
+        'faTwitter',
+        'faGithub'
+      ]
     }
   },
 
