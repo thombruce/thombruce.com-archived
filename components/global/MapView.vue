@@ -1,24 +1,23 @@
 <template lang="pug">
-client-only
-  .map-container
-    l-map.map(
-      :zoom="zoom"
-      :center="center"
-      :options="options"
-      ref="leafletMap"
+.map-container
+  l-map.map(
+    :zoom="zoom"
+    :center="center"
+    :options="options"
+    ref="leafletMap"
+  )
+    l-tile-layer(
+      url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     )
-      l-tile-layer(
-        url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      )
-      l-marker(
-        v-for="marker in markers"
-        :key="marker.name"
-        :lat-lng="[marker.latitude, marker.longitude]"
-        @click="updateView(marker)"
-      )
-        l-tooltip(:options="{sticky: true}")
-          | {{ marker.name }}
+    l-marker(
+      v-for="marker in markers"
+      :key="marker.name"
+      :lat-lng="[marker.latitude, marker.longitude]"
+      @click="updateView(marker)"
+    )
+      l-tooltip(:options="{sticky: true}")
+        | {{ marker.name }}
 </template>
 
 <script>
