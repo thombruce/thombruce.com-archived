@@ -1,6 +1,6 @@
 <template lang="pug">
 client-only
-  .map-container
+  div(style='min-height:5.5rem;')
     l-map.map(
       :zoom="zoom"
       :center="center"
@@ -60,10 +60,6 @@ export default {
 </script>
 
 <style lang='postcss'>
-.map-container {
-  min-height:5.5rem;
-}
-
 .map {
   min-height: inherit;
   width: 100%;
