@@ -99,6 +99,10 @@ export default {
     }
   },
 
+  router: {
+    base: '/thombruce.com/'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     plugins: [
