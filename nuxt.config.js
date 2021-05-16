@@ -41,6 +41,7 @@ export default {
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -72,6 +73,24 @@ export default {
 
   colorMode: {
     classSuffix: ''
+  },
+
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      // regular: true, // TODO: List only the icons used!
+      solid: [
+        'faHome',
+        'faPenAlt',
+        'faCode',
+        'faFilm',
+        'faBook',
+        'faInfo',
+        'faSun',
+        'faMoon'
+      ],
+      // brands: true // TODO: List only the icons used!
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

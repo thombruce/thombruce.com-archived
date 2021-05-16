@@ -20,8 +20,12 @@
     "timepiece.vue": "https://github.com/thombruce/timepiece.vue"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@nuxt/image": "^0.4.8",
     "@nuxtjs/color-mode": "^2.0.5",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/tailwindcss": "^4.1.2",
     "postcss": "^8.2.15",
     "pug": "^3.0.2",

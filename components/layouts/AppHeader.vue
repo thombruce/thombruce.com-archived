@@ -5,7 +5,9 @@ header.justify-center
   nav
     ul
       li(v-for='(item, i) in items' :key='i')
-        NuxtLink(:to='item.to') {{ item.title }}
+        NuxtLink(:to='item.to')
+          fa.inline(:icon='[`fas`, item.icon]' class='md:hidden')
+          span.hidden(class='md:inline') {{ item.title }}
   VDarkmodeToggle
 </template>
 
@@ -15,32 +17,32 @@ export default {
     return {
       items: [
         {
-          // icon: 'mdi-home',
+          icon: 'home',
           title: 'Home',
           to: '/'
         },
         {
-          // icon: 'mdi-post',
+          icon: 'pen-alt',
           title: 'Blog',
           to: '/blog'
         },
         {
-          // icon: 'mdi-code-tags',
+          icon: 'code',
           title: 'Code',
           to: '/code'
         },
         {
-          // icon: 'mdi-movie',
+          icon: 'film',
           title: 'Screenplays',
           to: '/screenplays'
         },
         {
-          // icon: 'mdi-book-open-variant',
+          icon: 'book',
           title: 'Guestbook',
           to: '/guestbook'
         },
         {
-          // icon: 'mdi-information',
+          icon: 'info',
           title: 'About',
           to: '/about'
         }
