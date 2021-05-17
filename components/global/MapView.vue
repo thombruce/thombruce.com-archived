@@ -1,6 +1,6 @@
 <template lang="pug">
 client-only
-  div(style='min-height:5.5rem;')
+  div(:style='`min-height:5.5rem;height:${height};`')
     l-map.map(
       :zoom="zoom"
       :center="center"
@@ -39,6 +39,10 @@ export default {
     options: {
       type: Object,
       default: () => ({})
+    },
+    height: {
+      type: String,
+      default: '24rem'
     },
     markers: {
       type: Object,
