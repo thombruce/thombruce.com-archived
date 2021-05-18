@@ -89,7 +89,9 @@ export default {
         'faBook',
         'faInfo',
         'faSun',
-        'faMoon'
+        'faMoon',
+        'faStar',
+        'faStarHalf'
       ],
       brands: [
         'faFacebook',
