@@ -35,6 +35,10 @@ GitHub/GitLab
 
 ThomBruce.com is being hosted by Netlify.
 
+- [ ] Continuous Delivery
+
+At this time, we're using Netlify's 300 free build minutes, but Nuxt is kind of demanding so these get eaten up kind of fast. GitHub and Circle CI (for projects hosted on GitHub) offer unlimited build minutes for open source projects, buuuut... GitHub only allows 1GB of large file storage, after which I would have to consider a new CDN (see below).
+
 - [x] Uptime Monitoring and Status Page
 
 Formerly, I've monitored my websites using [UptimeRobot](https://uptimerobot.com/). My new status page at [status.thombruce.com](https://status.thombruce.com/) uses [Upptime](https://upptime.js.org/).
@@ -46,6 +50,10 @@ Nuxt Content
 - [ ] Content Management System
 
 At present I'm just using a code editor, Visual Studio Code, but I have plans to develop a separate CMS.
+
+- [ ] Content Delivery Network (CDN)
+
+Currently, images are being stored directly in the repo with GitLab's generous 10GB of free LFS storage. They are mutated directly by the application and served by Netlify's CDN - Netlify provide 100GB bandwidth per month for free across all sites per account. But I am looking at moving to Cloudinary, which offers 25GB of storage or 25GB of viewing bandwidth or 25k transformations, or any combination of those adding up to 25 credits. I do not know if use of Nuxt Image would alleviate the demand on Cloudinary by storing resultant transformations locally on Netlify's CDN... but it is certainly something to look at. The best option is always to store only what is needed.
 
 - [x] Site Interactivity (Comments, etc.)
 
