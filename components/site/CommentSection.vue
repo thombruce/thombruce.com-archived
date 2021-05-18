@@ -14,7 +14,12 @@ section
 </template>
 
 <script>
+import CommentForm from './CommentForm'
+
 export default {
+  components: {
+    CommentForm
+  },
   props: [
     'path'
   ],

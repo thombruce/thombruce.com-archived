@@ -13,7 +13,12 @@ article
 </template>
 
 <script>
+import CommentSection from '~/components/site/CommentSection'
+
 export default {
+  components: {
+    CommentSection
+  },
   async asyncData({ $content, params }) {
     const article = await $content('blog', params.post).fetch()
 

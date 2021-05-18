@@ -4,9 +4,12 @@ client-only(v-if='!$fetchState.pending')
 </template>
 
 <script>
-import LeafletMap from '~/components/leaflet/LeafletMap'
+import LeafletMap from '~/components/vendor/leaflet/LeafletMap'
 
 export default {
+  components: {
+    LeafletMap
+  },
   props: {
     place: { type: String },
     latitude: { type: [String, Number] },
@@ -15,9 +18,6 @@ export default {
     options: { type: Object },
     height: { type: String },
     markers: { type: Object }
-  },
-  components: {
-    LeafletMap
   },
   data () {
     return {

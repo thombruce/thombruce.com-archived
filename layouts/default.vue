@@ -1,21 +1,21 @@
 <template lang='pug'>
 #appContainer
-  AppHeader
+  LayoutHeader
 
   main.container.mx-auto.px-5
     Nuxt
 
-  AppFooter
+  LayoutFooter
 </template>
 
 <script>
-import AppHeader from '~/components/layouts/AppHeader'
-import AppFooter from '~/components/layouts/AppFooter'
+import LayoutHeader from '~/components/site/layout/LayoutHeader'
+import LayoutFooter from '~/components/site/layout/LayoutFooter'
 
 export default {
   components: {
-    AppHeader,
-    AppFooter
+    LayoutHeader,
+    LayoutFooter
   }
 }
 </script>

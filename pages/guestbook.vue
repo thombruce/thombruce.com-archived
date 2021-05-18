@@ -14,7 +14,12 @@ article
 </template>
 
 <script>
+import GuestForm from '~/components/site/GuestForm'
+
 export default {
+  components: {
+    GuestForm
+  },
   async asyncData({ $content }) {
     const guestbook = await $content('_data', 'guestbook')
       .sortBy('createdAt', 'desc')
