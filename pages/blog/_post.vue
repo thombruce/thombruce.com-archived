@@ -14,11 +14,8 @@ article
 
 <script>
 export default {
-  async asyncData({ $content, params, store }) {
-    const article = await $content('blog', params.post).fetch()
-
-    // Load additional data into Store
-    await store.dispatch('content/where', article.data)
+  async asyncData({ params, store }) {
+    const article = await store.dispatch('blog/find', params.post)
 
     return { article }
   }
