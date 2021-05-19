@@ -9,18 +9,6 @@ series:
 tags:
   - Star Wars
   - Film
-data:
-  - /media/movies/rogue-one-a-star-wars-story
-  - /media/movies/star-wars-a-new-hope
-  - /media/movies/solo-a-star-wars-story
-  - /media/movies/star-wars-the-empire-strikes-back
-  - /media/movies/star-wars-the-phantom-menace
-  - /media/movies/star-wars-attack-of-the-clones
-  - /media/movies/star-wars-revenge-of-the-sith
-  - /media/movies/star-wars-return-of-the-jedi
-  - /media/movies/star-wars-the-force-awakens
-  - /media/movies/star-wars-the-last-jedi
-  - /media/movies/star-wars-the-rise-of-skywalker
 ---
 
 ## 1. Rogue One: A Star Wars Story
