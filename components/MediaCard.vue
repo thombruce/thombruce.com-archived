@@ -1,5 +1,5 @@
 <template lang='pug'>
-article.my-2.rounded.shadow(class='bg-gray-100 dark:bg-gray-900')
+article.my-2.rounded.shadow(:id='ident' class='bg-gray-100 dark:bg-gray-900')
   header.flex
     NuxtImg(v-if='cardItem.image' :src='cardItem.image' sizes='sm:100px' style='width:100px;')
     div.px-4.py-3
@@ -17,6 +17,15 @@ export default {
   data () {
     return {
       cardItem: {}
+    }
+  },
+  computed: {
+    ident () {
+      if (typeof this.item === 'string') {
+        return _.snakeCase(this.item)
+      } else {
+        return _.snakeCase(this.item.path)
+      }
     }
   },
   async fetch () {
