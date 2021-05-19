@@ -34,6 +34,9 @@ export default {
     } else {
       this.cardItem = this.item
     }
+  },
+  fetchKey () {
+    return this.ident
   }
 }
 </script>
