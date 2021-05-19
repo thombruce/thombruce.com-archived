@@ -10,16 +10,11 @@ section
       div
         p(style='white-space: pre-wrap;') {{ comment.message }}
   footer
-    CommentForm(:path='path')
+    CommentsForm(:path='path')
 </template>
 
 <script>
-import CommentForm from './CommentForm'
-
 export default {
-  components: {
-    CommentForm
-  },
   props: [
     'path'
   ],

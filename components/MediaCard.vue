@@ -6,7 +6,7 @@ article.my-2.rounded.shadow(class='bg-gray-100 dark:bg-gray-900')
       h2
         NuxtLink(:to='cardItem') {{ cardItem.title }}
       time.info--text(:datetime='cardItem.releasedAt') {{ cardItem.releasedAt }}
-      UIStarRating(:score='cardItem.score / 2')
+      UiStarRating(:score='cardItem.score / 2')
 </template>
 
 <script>

@@ -9,16 +9,11 @@ article
     NuxtContent(:document='article')
 
   footer
-    CommentSection(:path='article.path')
+    CommentsSection(:path='article.path')
 </template>
 
 <script>
-import CommentSection from '~/components/site/CommentSection'
-
 export default {
-  components: {
-    CommentSection
-  },
   async asyncData({ $content, params }) {
     const article = await $content('blog', params.post).fetch()
 

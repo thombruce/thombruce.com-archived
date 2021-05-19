@@ -9,13 +9,5 @@
 </template>
 
 <script>
-import LayoutHeader from '~/components/site/layout/LayoutHeader'
-import LayoutFooter from '~/components/site/layout/LayoutFooter'
-
-export default {
-  components: {
-    LayoutHeader,
-    LayoutFooter
-  }
-}
+export default {}
 </script>
