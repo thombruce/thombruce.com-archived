@@ -17,8 +17,7 @@
     "core-js": "^3.12.1",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.6",
-    "nuxt-leaflet": "^0.0.25",
-    "timepiece.vue": "https://github.com/thombruce/timepiece.vue"
+    "nuxt-leaflet": "^0.0.25"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
