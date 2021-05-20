@@ -66,3 +66,25 @@ textarea,
 select {
   @apply bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-50;
 }
+
+.nuxt-content {
+  & .nuxt-content-highlight {
+    @apply relative;
+
+    /* Style filename span added by @nuxt/content */
+    & > .filename {
+      @apply absolute right-0 top-0 text-gray-800 z-10 font-mono text-sm tracking-tight leading-none mr-4 mt-3;
+    }
+
+    /* Add top padding to code blocks with filename */
+    & > .filename + pre[class*="language-"] {
+      @apply pt-8;
+    }
+  }
+
+  /* Force style on pre elements */
+  & pre[class*="language-"] {
+    /* Make pre static so the relative goes to the parent (.nuxt-content-highlight) */
+    @apply static;
+  }
+}

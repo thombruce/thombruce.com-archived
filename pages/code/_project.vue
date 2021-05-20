@@ -3,8 +3,7 @@ article
   header
     h1 {{ project.title }}
 
-  div
-    NuxtContent(:document='project')
+  ArticleContent(:article='project')
 </template>
 
 <script>

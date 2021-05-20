@@ -5,8 +5,7 @@ article
     h1 {{ article.title }}
     time(:datetime='article.createdAt') {{ article.createdAt }}
 
-  div
-    NuxtContent(:document='article')
+  ArticleContent(:article='article')
 
   footer
     CommentsSection(:path='article.path')

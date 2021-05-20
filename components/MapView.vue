@@ -28,6 +28,9 @@ export default {
       this.long = content.longitude
       this.z = content.zoom
     }
+  },
+  fetchKey () {
+    return this.place ? this.place : `${this.latitude}${this.longitude}`
   }
 }
 </script>

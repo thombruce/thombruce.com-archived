@@ -14,7 +14,7 @@ tags:
 
 In my last entry, I talked about my decision to use Markdown to write my blog posts and briefly touched on my use of a Static Site Generator, [Nuxt.js](https://nuxtjs.org/). Nuxt is extraordinarily agnostic about what those Markdown files should look like, however. In fact, it supports numerous file formats as well as Markdown and doesn't really express much of a preference. It does, however, come with an example Markdown file with a structure a little like this:
 
-```md
+```md[file-name.md]
 ---
 title: Title
 description: 'A description of the content of the article.

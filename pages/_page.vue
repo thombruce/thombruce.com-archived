@@ -5,8 +5,7 @@ article
     h1 {{ page.title }}
     time(:datetime='page.createdAt') {{ page.createdAt }}
 
-  div
-    NuxtContent(:document='page')
+  ArticleContent(:article='page')
 </template>
 
 <script>

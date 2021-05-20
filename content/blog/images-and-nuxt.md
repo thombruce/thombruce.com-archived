@@ -35,41 +35,41 @@ buildModules: [
 
 With that done, I can now use Nuxt's `NuxtImg` and `NuxtPicture` tags wherever I like, including in my Markdown content. And with that, I can control the sizes displayed across different devices. Take note of the `sizes` attributes used below. Here, I've set it to the same value for sm, md and lg (small, medium and large screens), but these can be set individually so that different screens load different sizes. `50vw` and `25vw` below mean "50% of the view width" and "25% of the view width" respectively, so Nuxt actually will create differently sized images for differently sized screens, even though the values are the same. `vw` could have been `px` instead, which would have meant these were explicit pixel values, rather than sizes relative to screen size.
 
-What all of this means is that I can now use the `NuxtImg` tag to generate images at different sizes; not merely the same image displayed at different sizes, but separate images specifically generated for the size that they will appear.
+What all of this means is that I can now use the `nuxt-img` tag to generate images at different sizes; not merely the same image displayed at different sizes, but separate images specifically generated for the size that they will appear.
 
 _Note: It is sort of poor practice to load the same image twice; if I want it twice, why not just load it once at the larger of the two values and artificially shrink the second version? The two examples below are included only for demonstration purposes._
 
 ### An image at 50vw
 
 ```md
-<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></NuxtImg>
+<nuxt-img src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></nuxt-img>
 ```
 
 How it looks:
 
-<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></NuxtImg>
+<nuxt-img src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw'></nuxt-img>
 
 ### The same image at 25vw
 
 ```md
-<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></NuxtImg>
+<nuxt-img src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></nuxt-img>
 ```
 
 How it looks:
 
-<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></NuxtImg>
+<nuxt-img src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:25vw md:25vw lg:25vw'></nuxt-img>
 
 As stated in the note above, it's a little redundant to load the same image twice here at two separate sizes. An alternative to loading the second image would be to do the following:
 
 ```md
-<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></NuxtImg>
+<nuxt-img src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></nuxt-img>
 ```
 
 Instead of loading a separate, smaller version of the image, this would load the same version as the initial tag. The size as displayed is then controlled by CSS in the `style` attribute instead.
 
 The result looks much the same:
 
-<NuxtImg src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></NuxtImg>
+<nuxt-img src='/uploads/blog/rirri-p_swqcXUc1k-unsplash.jpg' sizes='sm:50vw md:50vw lg:50vw' style='width:25vw;'></nuxt-img>
 
 The aim of course is always to only load precisely what is needed, and no more.
 

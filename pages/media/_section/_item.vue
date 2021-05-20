@@ -5,16 +5,7 @@ article
     h1 {{ item.title }}
     time(:datetime='item.releasedAt') {{ item.releasedAt }}
 
-  div
-    NuxtContent(:document='item')
-    TimepieceCountdown(
-      :date='item.releasedAt'
-      :leadingZeroes='{ hours: true, minutes: true, seconds: true }'
-      daysSeparator='&nbsp;days '
-      hoursSeparator=':'
-      minutesSeparator=':'
-      secondsSeparator=''
-    )
+  ArticleContent(:article='item')
 </template>
 
 <script>
