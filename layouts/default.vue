@@ -3,7 +3,8 @@
   LayoutHeader
 
   main.container.mx-auto.px-5
-    Nuxt
+    .max-w-prose.mx-auto
+      Nuxt
 
   LayoutFooter
 </template>
