@@ -111,10 +111,10 @@ One plugin I am eager to install (so will do right now) is the [remark-math](htt
   },
 ```
 
-After which, I should be able to add inline math ($L$) as well as math blocks like this one:
+After which, I should be able to add inline math ($N$) as well as math blocks like this one:
 
 $$
-L = \frac{1}{2} \rho v^2 S C_L
+N = R_* \cdot f_\mathrm{p} \cdot n_\mathrm{e} \cdot f_\mathrm{l} \cdot f_\mathrm{i} \cdot f_\mathrm{c} \cdot L
 $$
 
 How much use I'll get out of that, I don't know. I've considered getting back into mathematics a little bit, so we'll see.
