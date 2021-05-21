@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: {
+    content: [
+      'content/**/*.md'
+    ]
+  },
   darkMode: 'class',
   theme: {
     extend: {},
