@@ -8,4 +8,4 @@ ThomBruce.com is my blogging/portfolio/whatever website built with Nuxt.js. If y
 
 | Domain | DNS | Framework | Source | Hosting | CI/CD | Status | Content API | CMS | CDN | Comments |
 | --- | ---|  --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Namecheap](https://namecheap.com/) | [Cloudflare](https://cloudflare.com/) | [NuxtJS](https://nuxtjs.org/), [Vuetify](https://vuetifyjs.com/) | [GitLab](https://gitlab.com/) | [Netlify](https://netlify.com/) | [Netlify](https://netlify.com/) | [Upptime](https://status.thombruce.com/) | Static | File System | [GitLab](https://gitlab.com/), [Netlify](https://netlify.com/) | [Staticman](https://staticman.net/)
+| [Namecheap](https://namecheap.com/) | [Cloudflare](https://cloudflare.com/) | [NuxtJS](https://nuxtjs.org/), [Tailwind CSS](https://tailwindcss.com/) | [GitLab](https://gitlab.com/) | [Netlify](https://netlify.com/) | [Netlify](https://netlify.com/) | [Upptime](https://status.thombruce.com/) | Static | File System | [GitLab](https://gitlab.com/), [Netlify](https://netlify.com/) | [Staticman](https://staticman.net/)
