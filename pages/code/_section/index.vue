@@ -11,8 +11,8 @@ article
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const projects = await $content('code', { deep: true })
+  async asyncData({ $content, params }) {
+    const projects = await $content('code', params.section)
       .fetch()
 
     return { projects }
