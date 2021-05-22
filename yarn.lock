@@ -1637,10 +1637,10 @@
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
-"@thombruce/fountain.js@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@thombruce/fountain.js/-/fountain.js-1.4.0.tgz#df197c2dbab7ee9c213b54908cc93ec82760623a"
-  integrity sha512-WXTguJvi4gbpjzHa/u4LABCnsBJPgoiXXFtGcRAqa207D5AnrWiyAbqZ6XTEoRPsfMCYIABDi6o5KJoS9F3wXQ==
+"@thombruce/fountain-js@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@thombruce/fountain-js/-/fountain-js-1.5.1.tgz#50dd0d9c5a79a61b293a5a97c220dc071a4d06cd"
+  integrity sha512-/7cyazHt6Z4iZh/cF4t0dhIYWo1tuPorTyRnLZR5LwHh2ReSe/2JDzFsUT2ZuUR/iPmolcGhj6imkuXciaCXNQ==
 
 "@thombruce/vue-timepiece@^0.1.0":
   version "0.1.1"
