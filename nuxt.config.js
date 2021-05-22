@@ -46,6 +46,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontawesome',
+    "@thombruce/vue-timepiece/nuxt"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

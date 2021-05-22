@@ -14,6 +14,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@tailwindcss/forms": "^0.3.2",
     "@thombruce/fountain.js": "^1.4.0",
+    "@thombruce/vue-timepiece": "^0.1.0",
     "chart.js": "2.9.4",
     "core-js": "^3.12.1",
     "lodash": "^4.17.21",
