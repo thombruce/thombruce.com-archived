@@ -1643,9 +1643,9 @@
   integrity sha512-WXTguJvi4gbpjzHa/u4LABCnsBJPgoiXXFtGcRAqa207D5AnrWiyAbqZ6XTEoRPsfMCYIABDi6o5KJoS9F3wXQ==
 
 "@thombruce/vue-timepiece@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@thombruce/vue-timepiece/-/vue-timepiece-0.1.0.tgz#ccb156bbc5c821e5fe86786180341603f6141c50"
-  integrity sha512-bQ7XeGuQb0GuNFChlsZD765ieaspR0qkz0Qm78lVyEegPLt6HnDW6nWN4MZu337PuTYZFZilmn9uBTDQmDFzEQ==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-timepiece/-/vue-timepiece-0.1.1.tgz#337a8959272f474ecb21ae8ad1fde1762f330221"
+  integrity sha512-hlHPmNcUzZz6eKIpN8xLnFREGQEy8Yk1I/9SvKSUuEcQH6o1res66s1PsxyUZLnFa8xz3d+tl2rK4+X1BRAYwA==
 
 "@types/anymatch@*":
   version "1.3.1"
