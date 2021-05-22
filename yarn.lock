@@ -1642,6 +1642,13 @@
   resolved "https://registry.yarnpkg.com/@thombruce/fountain-js/-/fountain-js-1.5.1.tgz#50dd0d9c5a79a61b293a5a97c220dc071a4d06cd"
   integrity sha512-/7cyazHt6Z4iZh/cF4t0dhIYWo1tuPorTyRnLZR5LwHh2ReSe/2JDzFsUT2ZuUR/iPmolcGhj6imkuXciaCXNQ==
 
+"@thombruce/vue-fountain@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.1.0.tgz#3bfe704d369e03bd7363f507f4e0cbbd6cc8b8c3"
+  integrity sha512-rAwZdIV++2uDGjWs9bSGejlfXV6iLwegFh9Y45achPghBvRN9GocmzWrkHf+01GxrR2q3cKjZz5g3FdV7eAW9A==
+  dependencies:
+    "@thombruce/fountain-js" "^1.5.1"
+
 "@thombruce/vue-timepiece@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@thombruce/vue-timepiece/-/vue-timepiece-0.1.1.tgz#337a8959272f474ecb21ae8ad1fde1762f330221"

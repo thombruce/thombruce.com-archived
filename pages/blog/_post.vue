@@ -1,14 +1,5 @@
 <template lang='pug'>
-article
-  header
-    NuxtImg(v-if='article.image' :src='article.image' width='100vw')
-    h1 {{ article.title }}
-    time(:datetime='article.createdAt') {{ article.createdAt }}
-
-  ArticleContent(:article='article')
-
-  footer
-    CommentsSection(:path='article.path')
+ArticlePage(:article='article')
 </template>
 
 <script>

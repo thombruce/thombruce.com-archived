@@ -1,7 +1,5 @@
 <template lang='pug'>
-article.screenplay
-  header.title-page(v-html="document.html.title_page")
-  .script(v-html="document.html.script")
+FountainScreenplay(:screenplay='document' title)
 </template>
 
 <script>
@@ -15,7 +13,3 @@ export default {
   }
 }
 </script>
-
-<style lang='postcss'>
-@import '~/assets/css/screenplay';
-</style>

@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 
-import fountain from '@thombruce/fountain-js'
+import fountain from '@thombruce/vue-fountain/src/fountain'
 
 const parseFountain = file => fountain.parse(file, function (output) {
   return { ...output, ...{ date: new Date(output.date) } } // { title: '', html: { title_page: '', script: '' } }
@@ -46,7 +46,8 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontawesome',
-    "@thombruce/vue-timepiece/nuxt"
+    "@thombruce/vue-timepiece/nuxt",
+    "@thombruce/vue-fountain/nuxt"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
