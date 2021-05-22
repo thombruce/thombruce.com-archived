@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 
-const fountain = require('@thombruce/fountain-js')
+import fountain from '@thombruce/fountain-js'
 
 const parseFountain = file => fountain.parse(file, function (output) {
   return { ...output, ...{ date: new Date(output.date) } } // { title: '', html: { title_page: '', script: '' } }
