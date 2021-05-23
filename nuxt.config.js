@@ -1,11 +1,5 @@
 import webpack from 'webpack'
 
-import fountain from '@thombruce/vue-fountain/src/fountain'
-
-const parseFountain = file => fountain.parse(file, function (output) {
-  return { ...output, ...{ date: new Date(output.date) } } // { title: '', html: { title_page: '', script: '' } }
-})
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -74,9 +68,6 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    extendParser: {
-      '.fountain': parseFountain
-    },
     markdown: {
       remarkPlugins: [
         'remark-math'
