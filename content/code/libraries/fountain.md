@@ -3,6 +3,14 @@ title: Fountain
 description: 'A JavaScript parser for the screenplay format Fountain.'
 ---
 
+<nuxt-img src='/uploads/code/fountain.png' sizes='sm:50vw md:20vw lg:20vw' class='mx-auto'></nuxt-img>
+
+<div class='w-max mx-auto'>
+  <nuxt-img src='/uploads/code/javascript.png' sizes='sm:20vw md:10vw lg:10vw' class='inline-block mx-5'></nuxt-img>
+  <nuxt-img src='/uploads/code/vue.png' sizes='sm:20vw md:10vw lg:10vw' class='inline-block mx-5'></nuxt-img>
+  <nuxt-img src='/uploads/code/nuxt.png' sizes='sm:20vw md:10vw lg:10vw' class='inline-block mx-5'></nuxt-img>
+</div>
+
 <fountain-screenplay>
 <template>
 INT. MUSIC ROOM - EVENING
