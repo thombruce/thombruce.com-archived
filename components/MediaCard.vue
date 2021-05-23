@@ -1,5 +1,5 @@
 <template lang='pug'>
-article.my-2.rounded.shadow(:id='ident' class='bg-gray-100 dark:bg-gray-900')
+article.my-2.rounded.shadow.overflow-hidden(:id='ident' class='bg-gray-100 dark:bg-gray-900')
   header.flex
     NuxtImg(v-if='cardItem.image' :src='cardItem.image' sizes='sm:100px' style='width:100px;')
     div.px-4.py-3
