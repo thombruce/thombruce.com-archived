@@ -1642,10 +1642,10 @@
   resolved "https://registry.yarnpkg.com/@thombruce/fountain-js/-/fountain-js-1.5.1.tgz#50dd0d9c5a79a61b293a5a97c220dc071a4d06cd"
   integrity sha512-/7cyazHt6Z4iZh/cF4t0dhIYWo1tuPorTyRnLZR5LwHh2ReSe/2JDzFsUT2ZuUR/iPmolcGhj6imkuXciaCXNQ==
 
-"@thombruce/vue-fountain@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.2.0.tgz#50288f8e94d6925c970e54faa56515248e0bb344"
-  integrity sha512-bnyKjdWpu/1VpLRqKadI+TxlC3UrbdDlQ5I/K9IcRZrm7v75qLQhm/q5DbnMl/c3v3ET320Hn88CsdXcPvzkVA==
+"@thombruce/vue-fountain@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.2.1.tgz#238570bcab9d1d663459ce0554512cfca7e3fbca"
+  integrity sha512-yviX8cLt2nPL2SAAc0kicdNswyhIrdCLrTzhvVOEre6tQ2G6/Gz96+rs8294zpc25lmPOaglu2Z5UiSpPkCh2Q==
   dependencies:
     "@thombruce/fountain-js" "^1.5.1"
 
