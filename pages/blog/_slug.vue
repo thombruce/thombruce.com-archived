@@ -13,7 +13,7 @@ div
 
 <script>
 export default {
-  async asyncData({ $content,  params, store }) {
+  async asyncData({ $content, params, store }) {
     const slug = params.slug
 
     const article = await $content('blog', slug)

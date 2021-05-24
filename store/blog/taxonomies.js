@@ -7,6 +7,7 @@ export const actions = {
     terms = _(terms).flatten()
                     .compact()
                     .uniq()
+                    .value()
 
     terms = terms.map(function(term) {
       return { slug: _.kebabCase(term), title: term }
