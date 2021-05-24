@@ -7,8 +7,6 @@ article
           NuxtLink(:to='project') {{ project.title }}
       div
         p {{ project.description }}
-  footer.hidden
-    NuxtLink(v-for='section in sections' :to='section' :key='section') {{ section }}
 </template>
 
 <script>

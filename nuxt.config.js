@@ -96,7 +96,8 @@ export default {
         'faSun',
         'faMoon',
         'faStar',
-        'faStarHalf'
+        'faStarHalf',
+        'faCaretRight'
       ],
       brands: [
         'faFacebook',

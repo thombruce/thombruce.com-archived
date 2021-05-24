@@ -4,6 +4,7 @@
 
   main.container.mx-auto.px-5
     .max-w-prose.mx-auto
+      LayoutBreadcrumbs
       Nuxt
 
   LayoutFooter

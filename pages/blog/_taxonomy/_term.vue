@@ -11,9 +11,6 @@ article
         time(:datetime='article.createdAt') {{ article.createdAt }}
       div
         p {{ article.description }}
-
-  footer.hidden
-    NuxtLink(:to='`/blog/${taxonomy}`') {{ taxonomy }}
 </template>
 
 <script>

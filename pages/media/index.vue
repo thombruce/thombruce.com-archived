@@ -2,8 +2,6 @@
 article
   div
     MediaCard(v-for='item in media' :key='item.slug' :item='item')
-  footer.hidden
-    NuxtLink(v-for='section in sections' :to='section' :key='section') {{ section }}
 </template>
 
 <script>
