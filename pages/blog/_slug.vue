@@ -12,11 +12,9 @@ div
 </template>
 
 <script>
-// TODO: Rename file to _slug given this now handles more than blog posts.
-
 export default {
   async asyncData({ $content,  params, store }) {
-    const slug = params.post
+    const slug = params.slug
 
     const article = await $content('blog', slug)
       .fetch()
