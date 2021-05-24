@@ -25,7 +25,7 @@ export default {
       .sortBy('createdAt', 'desc')
       .fetch()
 
-    return { taxonomy, term, articles }
+    return { term, articles }
   }
 }
 </script>

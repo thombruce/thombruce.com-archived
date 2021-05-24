@@ -11,9 +11,7 @@ export default {
       .sortBy('releasedAt', 'desc')
       .fetch()
 
-    const sections = [...new Set(media.map(item => item.dir))]
-
-    return { media, sections }
+    return { media }
   }
 }
 </script>
