@@ -1,13 +1,31 @@
 <template lang='pug'>
-ArticlePage(:article='article')
+div
+  ArticlePage(v-if='article.isResolved && !Array.isArray(article)' :article='article')
+  article(v-else)
+    header
+      h1 {{ slug | titleize }}
+    div
+      article(v-for='term in article')
+        header
+          h2
+            NuxtLink(:to='{ name: `blog-taxonomy-term`, params: { taxonomy: slug, term: term.slug } }') {{ term.title }}
 </template>
 
 <script>
-export default {
-  async asyncData({ params, store }) {
-    const article = await store.dispatch('blog/find', params.post)
+// TODO: Rename file to _slug given this now handles more than blog posts.
 
-    return { article }
+export default {
+  async asyncData({ $content,  params, store }) {
+    const slug = params.post
+
+    const article = await $content('blog', slug)
+      .fetch()
+      .catch(async () => {
+        const terms = await store.dispatch('blog/taxonomies/all', { taxonomy: slug })
+        return terms
+      })
+
+    return { slug, article }
   }
 }
 </script>

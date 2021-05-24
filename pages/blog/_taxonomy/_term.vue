@@ -2,6 +2,7 @@
 article
   header
     h1 {{ term.title }}
+
   div
     article(v-for='article in articles')
       header
@@ -10,6 +11,9 @@ article
         time(:datetime='article.createdAt') {{ article.createdAt }}
       div
         p {{ article.description }}
+
+  footer.hidden
+    NuxtLink(:to='`/blog/${taxonomy}`') {{ taxonomy }}
 </template>
 
 <script>
