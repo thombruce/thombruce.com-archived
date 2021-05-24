@@ -1,6 +1,6 @@
 <template lang='pug'>
 div
-  ArticlePage(v-if='article.isResolved && !Array.isArray(article)' :article='article')
+  ArticlePage(v-if='!Array.isArray(article)' :article='article')
   article(v-else)
     header
       h1 {{ slug | titleize }}
