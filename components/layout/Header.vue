@@ -17,11 +17,6 @@ export default {
     return {
       items: [
         {
-          icon: 'home',
-          title: 'Home',
-          to: '/'
-        },
-        {
           icon: 'pen-alt',
           title: 'Blog',
           to: '/blog'
@@ -35,11 +30,6 @@ export default {
           icon: 'film',
           title: 'Screenplays',
           to: '/screenplays'
-        },
-        {
-          icon: 'book',
-          title: 'Guestbook',
-          to: '/guestbook'
         },
         {
           icon: 'info',
@@ -57,13 +47,13 @@ export default {
 header {
   @apply flex py-5 px-4;
   & > span:first-of-type {
-    @apply block font-bold;
+    @apply block font-bold pr-3 md:pr-4;
   }
   & > nav {
     & ul {
       @apply flex;
       & li a {
-        @apply block px-4;
+        @apply block px-3 md:px-4;
       }
     }
   }
