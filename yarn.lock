@@ -1649,6 +1649,14 @@
   dependencies:
     "@thombruce/fountain-js" "^1.5.1"
 
+"@thombruce/vue-playfair@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-playfair/-/vue-playfair-0.1.0.tgz#4299200ae12fca1b4a3c0170a3250318126ddecf"
+  integrity sha512-V/h6TsqXPonZT6jkVsq6/jRyAkFa8XET0AKg1zeNobA51yNIC11ceeszZTt06HkshABRqRxLhifG2jbX9B31xQ==
+  dependencies:
+    chart.js "2.9.4"
+    vue-chartjs "^3.5.1"
+
 "@thombruce/vue-timepiece@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@thombruce/vue-timepiece/-/vue-timepiece-0.1.1.tgz#337a8959272f474ecb21ae8ad1fde1762f330221"

@@ -2,6 +2,7 @@
 title: Charting it Out
 description: 'Adding charts to my Markdown documents'
 createdAt: 2021-05-21T15:56:42Z
+updatedAt: 2021-05-28T18:08:33Z
 categories:
   - Journal
 series:
@@ -58,54 +59,56 @@ Using this library, I now have access to the following charts, and could expand 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Bar Chart</h2>
 
-  <bar-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></bar-chart>
+  <playfair-bar-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></playfair-bar-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Horizontal Bar Chart</h2>
 
-  <horizontal-bar-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></horizontal-bar-chart>
+  <playfair-horizontal-bar-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></playfair-horizontal-bar-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Line Chart</h2>
 
-  <line-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderColor: `rgba(59, 130, 246, 1)`, backgroundColor: `rgba(59, 130, 246, .25)`, fill: true, data: [40, 20, 12] }]'></line-chart>
+  <playfair-line-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderColor: `rgba(59, 130, 246, 1)`, backgroundColor: `rgba(59, 130, 246, .25)`, fill: true, data: [40, 20, 12] }]'></playfair-line-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Pie Chart</h2>
 
-  <pie-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderWidth: 0, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></pie-chart>
+  <playfair-pie-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderWidth: 0, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></playfair-pie-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Doughnut Chart</h2>
 
-  <doughnut-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderWidth: 0, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></doughnut-chart>
+  <playfair-doughnut-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderWidth: 0, backgroundColor: [`#EF4444`, `#3B82F6`, `#10B981`], data: [40, 20, 12] }]'></playfair-doughnut-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Polar Area Chart</h2>
 
-  <polar-area-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderColor: [`rgba(239, 67, 68, 1)`, `rgba(39, 185, 129, 1)`, `rgba(59, 130, 246, 1)`], backgroundColor: [`rgba(239, 67, 68, .25)`, `rgba(39, 185, 129, .25)`, `rgba(59, 130, 246, .25)`], data: [40, 20, 12] }]'></polar-area-chart>
+  <playfair-polar-area-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderColor: [`rgba(239, 67, 68, 1)`, `rgba(39, 185, 129, 1)`, `rgba(59, 130, 246, 1)`], backgroundColor: [`rgba(239, 67, 68, .25)`, `rgba(39, 185, 129, .25)`, `rgba(59, 130, 246, .25)`], data: [40, 20, 12] }]'></playfair-polar-area-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Radar Chart</h2>
 
-  <radar-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderColor: `rgba(59, 130, 246, 1)`, backgroundColor: `rgba(59, 130, 246, .25)`, data: [40, 20, 12] }]'></radar-chart>
+  <playfair-radar-chart :labels='[`One`, `Two`, `Three`]' :datasets='[{ label: `Data`, borderColor: `rgba(59, 130, 246, 1)`, backgroundColor: `rgba(59, 130, 246, .25)`, data: [40, 20, 12] }]'></playfair-radar-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Scatter Chart</h2>
 
-  <scatter-chart :datasets='[{ label: `Data`, backgroundColor: `#EF4444`, data: [{ x: 20, y: 30 }, { x: 40, y: 10 }] }, { label: `Data2`, backgroundColor: `#3B82F6`, data: [{ x: 35, y: 15 }] }]'></scatter-chart>
+  <playfair-scatter-chart :datasets='[{ label: `Data`, backgroundColor: `#EF4444`, data: [{ x: 20, y: 30 }, { x: 40, y: 10 }] }, { label: `Data2`, backgroundColor: `#3B82F6`, data: [{ x: 35, y: 15 }] }]'></playfair-scatter-chart>
   </div>
 
   <div class='w-full md:w-1/2 md:p-5'>
   <h2>Bubble Chart</h2>
 
-  <bubble-chart :datasets='[{ label: `Data`, borderColor: `rgba(239, 67, 68, 1)`, backgroundColor: `rgba(239, 67, 68, .25)`, data: [{ x: 20, y: 30, r: 20 }, { x: 40, y: 10, r: 10 }] }, { label: `Data2`, borderColor: `rgba(59, 130, 246, 1)`, backgroundColor: `rgba(59, 130, 246, .25)`, data: [{ x: 35, y: 15, r: 50 }] }]'></bubble-chart>
+  <playfair-bubble-chart :datasets='[{ label: `Data`, borderColor: `rgba(239, 67, 68, 1)`, backgroundColor: `rgba(239, 67, 68, .25)`, data: [{ x: 20, y: 30, r: 20 }, { x: 40, y: 10, r: 10 }] }, { label: `Data2`, borderColor: `rgba(59, 130, 246, 1)`, backgroundColor: `rgba(59, 130, 246, .25)`, data: [{ x: 35, y: 15, r: 50 }] }]'></playfair-bubble-chart>
   </div>
 </div>
+
+_Update (2021-05-28): I've now packaged these charts into my own custom library, [Vue Playfair](https://github.com/thombruce/vue-playfair)._

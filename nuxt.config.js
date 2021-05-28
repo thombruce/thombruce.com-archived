@@ -30,8 +30,7 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
-    '~/components',
-    '~/components/charts'
+    '~/components'
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -41,7 +40,8 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/fontawesome',
     "@thombruce/vue-timepiece/nuxt",
-    "@thombruce/vue-fountain/nuxt"
+    "@thombruce/vue-fountain/nuxt",
+    "@thombruce/vue-playfair/nuxt"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
