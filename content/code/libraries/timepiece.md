@@ -4,7 +4,7 @@ description: 'Analog and digital clocks, timers and countdowns.'
 ---
 
 <div class='w-min mx-auto my-5'>
-  <timepiece-analog></timepiece>
+  <timepiece-analog></timepiece-analog>
 </div>
 
 <div class='w-max mx-auto'>
