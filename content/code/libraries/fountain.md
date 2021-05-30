@@ -1,6 +1,13 @@
 ---
 title: Fountain
 description: 'A JavaScript parser for the screenplay format Fountain.'
+simpleIcons:
+  - slug: javascript
+    color: '#F7DF1E'
+  - slug: vuedotjs
+    color: '#4FC08D'
+  - slug: nuxtdotjs
+    color: '#00C58E'
 ---
 
 <nuxt-img src='/uploads/code/fountain.png' sizes='sm:50vw md:20vw lg:20vw' class='mx-auto'></nuxt-img>

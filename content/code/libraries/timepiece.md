@@ -1,6 +1,13 @@
 ---
 title: Timepiece
 description: 'Analog and digital clocks, timers and countdowns.'
+simpleIcons:
+  - slug: javascript
+    color: '#F7DF1E'
+  - slug: vuedotjs
+    color: '#4FC08D'
+  - slug: nuxtdotjs
+    color: '#00C58E'
 ---
 
 <div class='w-min mx-auto my-5'>
