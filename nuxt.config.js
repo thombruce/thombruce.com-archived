@@ -99,11 +99,7 @@ export default {
         'faStarHalf',
         'faCaretRight'
       ],
-      brands: [
-        'faFacebook',
-        'faTwitter',
-        'faGithub'
-      ]
+      // brands: true, // TODO: List only the icons used!
     }
   },
 
