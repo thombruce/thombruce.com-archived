@@ -15,7 +15,7 @@
     "@tailwindcss/forms": "^0.3.2",
     "@thombruce/vue-fountain": "^0.2.1",
     "@thombruce/vue-playfair": "^0.1.0",
-    "@thombruce/vue-timepiece": "^0.1.0",
+    "@thombruce/vue-timepiece": "^0.1.3",
     "core-js": "^3.12.1",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.6",
