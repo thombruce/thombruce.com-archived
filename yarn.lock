@@ -1535,23 +1535,23 @@
     webpack-node-externals "^3.0.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/axios@^5.13.1":
-  version "5.13.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.13.1.tgz#70c7444e6be8989372c249637f9287c844340f42"
-  integrity sha512-vZpXV2AAkQ5Duejubt1k3ZgUnYowYnPvmcUt0hskd+OebmQ+jF6Wk6rOG0/9EeknOxm7mtTGgKSwdlE1jDo+xA==
+"@nuxtjs/axios@^5.13.5":
+  version "5.13.5"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.13.5.tgz#eddea8a6b8cc1e758bdd5adaeaa377104ebe6965"
+  integrity sha512-GyeuiseDCwfRGDQH/gK+lngCseZS3SQm3q6xqiVx5xQnzCqokojN3uJkNB0DdHCowBP1aim+mDhu3spzcCnyBg==
   dependencies:
     "@nuxtjs/proxy" "^2.1.0"
     axios "^0.21.1"
     axios-retry "^3.1.9"
     consola "^2.15.3"
-    defu "^3.2.2"
+    defu "^5.0.0"
 
-"@nuxtjs/color-mode@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-2.0.5.tgz#79a5c70384bd245ebc9c6499e9dac5ded301c54b"
-  integrity sha512-upPCVTLQ2vZGvOjt0geLanPSS+ailgFRjqRsCUcbCQOwEesEO/zoLmbWBO35t3lV5nRXF7CLCX65KwBiogXE9g==
+"@nuxtjs/color-mode@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-2.0.9.tgz#c61cd54805dea47f61ca130707c00b826ec69dc3"
+  integrity sha512-Oh+aXZeHgzdMBGioJ4qGssoKBxoWyXPVrZs7/FOY53eieNdW/+cY157PYYBNvEJBJCG4mnbdmdTdNM0P+aA+Fw==
   dependencies:
-    defu "^3.2.2"
+    defu "^5.0.0"
     lodash.template "^4.5.0"
 
 "@nuxtjs/fontawesome@^1.1.2":
@@ -1628,10 +1628,10 @@
   resolved "https://registry.yarnpkg.com/@thombruce/fountain-js/-/fountain-js-1.5.1.tgz#50dd0d9c5a79a61b293a5a97c220dc071a4d06cd"
   integrity sha512-/7cyazHt6Z4iZh/cF4t0dhIYWo1tuPorTyRnLZR5LwHh2ReSe/2JDzFsUT2ZuUR/iPmolcGhj6imkuXciaCXNQ==
 
-"@thombruce/vue-fountain@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.2.1.tgz#238570bcab9d1d663459ce0554512cfca7e3fbca"
-  integrity sha512-yviX8cLt2nPL2SAAc0kicdNswyhIrdCLrTzhvVOEre6tQ2G6/Gz96+rs8294zpc25lmPOaglu2Z5UiSpPkCh2Q==
+"@thombruce/vue-fountain@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.2.3.tgz#1c1a86a8b4bdb848637a4ac5b772f30b471aec35"
+  integrity sha512-J5/FEtdIc5IbsfemMveVibFSjiNm+OM+DMRks2lVLrcBp+m3YtDPLJhtRIZeJ2cUE2n+H6/+1TkI+UD2YYwX9A==
   dependencies:
     "@thombruce/fountain-js" "^1.5.1"
 
@@ -3590,10 +3590,10 @@ core-js@^2.6.5:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.12.1:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.12.1.tgz#6b5af4ff55616c08a44d386f1f510917ff204112"
-  integrity sha512-Ne9DKPHTObRuB09Dru5AjwKjY4cJHVGu+y5f7coGn1E9Grkc3p2iBwE9AI/nJzsE29mQF7oq+mhYYRqOMFN1Bw==
+core-js@^3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.13.1.tgz#30303fabd53638892062d8b4e802cac7599e9fb7"
+  integrity sha512-JqveUc4igkqwStL2RTRn/EPFGBOfEZHxJl/8ej1mXJR75V3go2mFF4bmUYkEIT1rveHKnkUlcJX/c+f1TyIovQ==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -7194,12 +7194,7 @@ nan@^2.12.1:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
-nanoid@^3.1.20:
-  version "3.1.22"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.22.tgz#b35f8fb7d151990a8aebd5aa5015c03cf726f844"
-  integrity sha512-/2ZUaJX2ANuLtTvqTlgqBQNJoQO398KyJgZloL0PZkC0dpysjncRUPsFe3DUPzz/y3h+u7C46np8RMuvF3jsSQ==
-
-nanoid@^3.1.23:
+nanoid@^3.1.20, nanoid@^3.1.23:
   version "3.1.23"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
   integrity sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw==
@@ -8818,14 +8813,14 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.10, postcss@^8.2.13, postcss@^8.2.15:
-  version "8.2.15"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
-  integrity sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==
+postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.10, postcss@^8.2.13, postcss@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.0.tgz#b1a713f6172ca427e3f05ef1303de8b65683325f"
+  integrity sha512-+ogXpdAjWGa+fdYY5BQ96V/6tAo+TdSSIMP5huJBIygdWwKtVoB5JWZ7yUd4xZ8r+8Kvvx4nyg/PQ071H4UtcQ==
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.23"
-    source-map "^0.6.1"
+    source-map-js "^0.6.2"
 
 prebuild-install@^6.0.1:
   version "6.1.2"
@@ -10107,6 +10102,11 @@ source-list-map@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
+
+source-map-js@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-0.6.2.tgz#0bb5de631b41cfbda6cfba8bd05a80efdfd2385e"
+  integrity sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==
 
 source-map-resolve@^0.5.0:
   version "0.5.3"
