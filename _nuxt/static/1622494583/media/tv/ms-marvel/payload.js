@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/media/tv/ms-marvel", (function(a){return {data:[{item:{slug:"ms-marvel",title:"Ms. Marvel",releasedAt:null,toc:[],body:{type:"root",children:[]},dir:"\u002Fmedia\u002Ftv",path:"\u002Fmedia\u002Ftv\u002Fms-marvel",extension:".md",createdAt:a,updatedAt:a},_img:{}}],fetch:{},mutations:[]}}("2021-05-31T20:54:32.292Z")));
