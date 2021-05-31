@@ -30,7 +30,7 @@ export default {
   },
   async fetch () {
     if (typeof this.item === 'string') {
-      this.cardItem = this.$store.state.content.list[this.item] || await this.$content(this.item).fetch()
+      this.cardItem = await this.$content(this.item).fetch()
     } else {
       this.cardItem = this.item
     }
