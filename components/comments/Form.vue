@@ -29,7 +29,7 @@ export default {
   methods: {
     async submit () {
       await this.$axios.$post(
-        'https://thombruce-staticman.herokuapp.com/v3/entry/gitlab/thombruce/thombruce.com/main/comments',
+        'https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/comments',
         { fields: this.comment, options: this.options }
       )
     }
