@@ -21,7 +21,7 @@ export default {
         message: ''
       },
       options: {
-        path: `/_data/comments${this.options.path}`
+        path: `/_data/comments${this.path}`
       }
     }
   },
