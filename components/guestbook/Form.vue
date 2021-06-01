@@ -27,9 +27,9 @@ export default {
     async submit () {
       await this.$axios.$post(
         'https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/guestbook',
-        { fields: this.guest }
-      ).then(() => {
-        this.$store.commit('guestbook/push', { guests: [{ ...this.guest, ...{ createdAt: new Date().toISOString() } }] })
+        { fields: this.guest, options: { path: 'guestbook' } }
+      ).then((response) => {
+        this.$store.commit('guestbook/push', { guests: [response.fields] })
         this.guest = { name: '', message: '' }
       })
     }
