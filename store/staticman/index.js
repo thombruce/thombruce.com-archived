@@ -29,12 +29,10 @@ export const actions = {
   },
 
   async post({ commit, getters }, { fields, options, property }) {
-    await this.$axios.$post(
-      `https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/${property}`,
-      { fields, options }
-    ).then((response) => {
-      commit('push', { path: options.path, comments: [response.fields] })
-    })
+    await this.$staticman.$post(property, { fields, options })
+      .then((response) => {
+        commit('push', { path: options.path, comments: [response.fields] })
+      })
 
     return getters.all(options.path)
   }
