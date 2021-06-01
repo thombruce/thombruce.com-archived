@@ -20,11 +20,11 @@ export default {
   ],
   computed: {
     comments () {
-      return this.$store.getters['comments/all'](this.path)
+      return this.$store.getters['staticman/all'](`/_data/comments${this.path}`) // This new value is the same as comment.dir
     }
   },
   async fetch () {
-    await this.$store.dispatch('comments/all', { path: this.path })
+    await this.$store.dispatch('staticman/all', { path: `/_data/comments${this.path}` }) // This new value is the same as comment.dir
   }
 }
 </script>

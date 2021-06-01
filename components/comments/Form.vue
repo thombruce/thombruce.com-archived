@@ -21,20 +21,17 @@ export default {
         message: ''
       },
       options: {
-        path: this.path
+        path: `/_data/comments${this.options.path}`
       }
     }
   },
 
   methods: {
     async submit () {
-      await this.$axios.$post(
-        'https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/comments',
-        { fields: this.comment, options: { path: 'comments' + this.options.path } }
-      ).then((response) => {
-        this.$store.commit('comments/push', { path: this.path, comments: [response.fields] })
-        this.comment = { name: '', message: '' }
-      })
+      await this.$store.dispatch('staticman/post', { fields: this.comment, options: this.options, property: 'comments' })
+        .then(() => {
+          this.comment = { name: '', message: '' }
+        })
     }
   }
 }

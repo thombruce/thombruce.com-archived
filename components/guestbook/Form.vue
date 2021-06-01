@@ -19,19 +19,19 @@ export default {
       guest: {
         name: '',
         message: ''
+      },
+      options: {
+        path: `/_data/guestbook`
       }
     }
   },
 
   methods: {
     async submit () {
-      await this.$axios.$post(
-        'https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/guestbook',
-        { fields: this.guest, options: { path: 'guestbook' } }
-      ).then((response) => {
-        this.$store.commit('guestbook/push', { guests: [response.fields] })
-        this.guest = { name: '', message: '' }
-      })
+      await this.$store.dispatch('staticman/post', { fields: this.guest, options: this.options, property: 'guestbook' })
+        .then(() => {
+          this.guest = { name: '', message: '' }
+        })
     }
   }
 }

@@ -16,7 +16,7 @@ export const getters = {
 
 export const actions = {
   async all({ commit, getters }, { path }) {
-    const comments = await this.$content('_data', 'comments', path)
+    const comments = await this.$content(path)
       .sortBy('createdAt', 'asc')
       .fetch()
       .catch(() => {})
@@ -24,6 +24,17 @@ export const actions = {
     commit('push', { path, comments })
 
     return getters.all(path)
+  },
+
+  async post({ commit, getters }, { fields, options, property }) {
+    await this.$axios.$post(
+      `https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/${property}`,
+      { fields, options }
+    ).then((response) => {
+      commit('push', { path: options.path, comments: [response.fields] })
+    })
+
+    return getters.all(options.path)
   }
 }
 

@@ -17,11 +17,11 @@ article
 export default {
   computed: {
     guestbook () {
-      return this.$store.getters['guestbook/all']
+      return this.$store.getters['staticman/all'](`/_data/guestbook`) // This new value is the same as comment.dir
     }
   },
   async fetch () {
-    await this.$store.dispatch('guestbook/all')
+    await this.$store.dispatch('staticman/all', { path: `/_data/guestbook` }) // This new value is the same as comment.dir
   }
 }
 </script>
