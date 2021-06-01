@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/guestbook", {data:[{_img:{}}],fetch:{"0":{_error:{message:"Cannot read property 'reduce' of undefined",statusCode:500}}},mutations:[]});
