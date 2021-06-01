@@ -28,7 +28,10 @@ export default {
       await this.$axios.$post(
         'https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/guestbook',
         { fields: this.guest }
-      )
+      ).then(() => {
+        this.$store.commit('guestbook/push', { guests: [{ ...this.guest, ...{ createdAt: new Date().toISOString() } }] })
+        this.guest = { name: '', message: '' }
+      })
     }
   }
 }

@@ -18,16 +18,13 @@ export default {
   props: [
     'path'
   ],
-  data () {
-    return {
-      comments: null
+  computed: {
+    comments () {
+      return this.$store.getters['comments/all'](this.path)
     }
   },
   async fetch () {
-    this.comments = await this.$content('_data', 'comments', this.path)
-      .sortBy('createdAt', 'asc')
-      .fetch()
-      .catch(() => {})
+    await this.$store.dispatch('comments/all', { path: this.path })
   }
 }
 </script>

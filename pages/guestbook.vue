@@ -15,13 +15,13 @@ article
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const guestbook = await $content('_data', 'guestbook')
-      .sortBy('createdAt', 'desc')
-      .fetch()
-      .catch(() => {})
-
-    return { guestbook }
+  computed: {
+    guestbook () {
+      return this.$store.getters['guestbook/all']
+    }
+  },
+  async fetch () {
+    await this.$store.dispatch('guestbook/all')
   }
 }
 </script>

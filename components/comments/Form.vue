@@ -31,7 +31,10 @@ export default {
       await this.$axios.$post(
         'https://thombruce-staticman.herokuapp.com/v3/entry/github/thombruce/thombruce.com/main/comments',
         { fields: this.comment, options: this.options }
-      )
+      ).then(() => {
+        this.$store.commit('comments/push', { path: this.path, comments: [{ ...this.comment, ...{ createdAt: new Date().toISOString() } }] })
+        this.comment = { name: '', message: '' }
+      })
     }
   }
 }
