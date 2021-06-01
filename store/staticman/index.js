@@ -6,11 +6,13 @@ export const state = () => ({
 
 export const getters = {
   all: (state, _getters, _rootState, _rootGetters) => (path) => {
-    const comments = Object.values(state.list[path])
+    if (state.list[path]) {
+      const comments = Object.values(state.list[path])
 
-    return comments.sort((a, b) => {
-      return a.createdAt - b.createdAt // Ascending sort
-    })
+      return comments.sort((a, b) => {
+        return a.createdAt - b.createdAt // Ascending sort
+      })
+    }
   }
 }
 
