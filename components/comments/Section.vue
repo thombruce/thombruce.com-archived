@@ -20,7 +20,7 @@ export default {
   ],
   computed: {
     comments () {
-      return this.$store.getters['staticman/all'](`/_data/comments${this.path}`) // This new value is the same as comment.dir
+      return this.$store.getters['staticman/asc'](`/_data/comments${this.path}`) // This new value is the same as comment.dir
     }
   },
   async fetch () {

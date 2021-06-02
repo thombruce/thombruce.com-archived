@@ -6,11 +6,26 @@ export const state = () => ({
 
 export const getters = {
   all: (state, _getters, _rootState, _rootGetters) => (path) => {
-    if (state.list[path]) {
-      const comments = Object.values(state.list[path])
+    const list = state.list[path]
+    if (list) {
+      return Object.values(list)
+    }
+  },
 
-      return comments.sort((a, b) => {
+  asc: (_state, getters, _rootState, _rootGetters) => (path) => {
+    const all = getters.all(path)
+    if (all) {
+      return all.sort((a, b) => {
         return a.createdAt - b.createdAt // Ascending sort
+      })
+    }
+  },
+
+  desc: (_state, getters, _rootState, _rootGetters) => (path) => {
+    const all = getters.all(path)
+    if (all) {
+      return all.sort((a, b) => {
+        return b.createdAt - a.createdAt // Descending sort
       })
     }
   }

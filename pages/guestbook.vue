@@ -17,7 +17,7 @@ article
 export default {
   computed: {
     guestbook () {
-      return this.$store.getters['staticman/all'](`/_data/guestbook`) // This new value is the same as comment.dir
+      return this.$store.getters['staticman/desc'](`/_data/guestbook`) // This new value is the same as comment.dir
     }
   },
   async fetch () {
