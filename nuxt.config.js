@@ -37,9 +37,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/fontawesome',
+    "@thombruce/tnt",
     "@thombruce/vue-timepiece/nuxt",
     "@thombruce/vue-fountain/nuxt",
     "@thombruce/vue-playfair/nuxt"
@@ -79,12 +77,7 @@ export default {
     }
   },
 
-  colorMode: {
-    classSuffix: ''
-  },
-
   fontawesome: {
-    component: 'fa',
     icons: {
       // regular: true, // TODO: List only the icons used!
       solid: [
@@ -94,8 +87,6 @@ export default {
         'faFilm',
         'faBook',
         'faInfo',
-        'faSun',
-        'faMoon',
         'faStar',
         'faStarHalf',
         'faCaretRight'

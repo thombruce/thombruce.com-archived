@@ -4,7 +4,7 @@ footer
     ul
       li(v-for='(item, i) in social' :key='i')
         a(:href='item.to' target='_blank')
-          SimpleIcon(:icon='item.icon')
+          TntSimpleIcon(:icon='item.icon')
   .copyright &copy; Thom Bruce 1989 - {{ new Date().getFullYear() }}
 </template>
 

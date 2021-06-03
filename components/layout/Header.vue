@@ -6,9 +6,9 @@ header.justify-center
     ul
       li(v-for='(item, i) in items' :key='i')
         NuxtLink(:to='item.to')
-          fa.inline(:icon='[`fas`, item.icon]' class='md:hidden')
-          span.hidden(class='md:inline') {{ item.title }}
-  UiDarkmodeToggle
+          fa(:icon='[`fas`, item.icon]')
+          span.hidden(class='md:inline md:pl-1') {{ item.title }}
+  TntDarkmodeToggle
 </template>
 
 <script>
