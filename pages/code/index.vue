@@ -8,7 +8,7 @@ article
         dl.inline-block.mr-3(v-if='project.simpleIcons')
           dt.hidden Tech
           dd.inline-block.mr-2(v-for='icon in project.simpleIcons')
-            SimpleIcon(:icon='icon.slug' :style='`color:${icon.color};`')
+            TntSimpleIcon(:icon='icon.slug' :style='`color:${icon.color};`')
       div
         p {{ project.description }}
 </template>

@@ -2,9 +2,9 @@
 form(v-model='guest' @submit.prevent='submit()')
   h3 Say Hello
 
-  TntInput(id='guestbookFormName' label='Name' v-model='guest.name')
+  TntFormInput(id='guestbookFormName' label='Name' v-model='guest.name')
 
-  TntTextarea(id='guestbookFormMessage' label='Message' v-model='guest.message')
+  TntFormTextarea(id='guestbookFormMessage' label='Message' v-model='guest.message')
 
   button(type="submit") Submit
 </template>

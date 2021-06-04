@@ -8,7 +8,7 @@ header.justify-center
         NuxtLink(:to='item.to')
           fa(:icon='[`fas`, item.icon]')
           span.hidden(class='md:inline md:pl-1') {{ item.title }}
-  TntDarkmodeToggle
+  TntUIDarkmodeToggle
 </template>
 
 <script>
