@@ -36,7 +36,9 @@ export const actions = {
     const comments = await this.$content(path)
       .sortBy('createdAt', 'asc')
       .fetch()
-      .catch(() => {})
+      .catch(() => {
+        return []
+      })
 
     commit('push', { path, comments })
 
