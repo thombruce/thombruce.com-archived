@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/series", {data:[{slug:"series",article:[{slug:"getting-started",title:"Getting Started"},{slug:"may-the-4th-be-with-you-2021",title:"May the 4th Be With You 2021"}],_img:{}}],fetch:{},mutations:[]});
