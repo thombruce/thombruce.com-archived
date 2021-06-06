@@ -1,5 +1,6 @@
 ---
 title: View From Here
+description: 'Customer surveys and feedback platform.'
 startedAt: 2013
 endedAt: 2014
 simpleIcons:
