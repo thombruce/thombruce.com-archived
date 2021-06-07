@@ -1636,16 +1636,16 @@
   resolved "https://registry.yarnpkg.com/@thombruce/fountain-js/-/fountain-js-1.5.1.tgz#50dd0d9c5a79a61b293a5a97c220dc071a4d06cd"
   integrity sha512-/7cyazHt6Z4iZh/cF4t0dhIYWo1tuPorTyRnLZR5LwHh2ReSe/2JDzFsUT2ZuUR/iPmolcGhj6imkuXciaCXNQ==
 
-"@thombruce/nuxt-taxonomies@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@thombruce/nuxt-taxonomies/-/nuxt-taxonomies-0.1.2.tgz#d41913c7314bef897556d059bdf0ce0d8166943b"
-  integrity sha512-TkApTmqOYIk2jcRZRyHjBeZot8DczYJjgBVqEbFcuOfEKtLbDd4zPuhKzWCbs0gh5XL4Ix/Z228mPIbKJkygYQ==
+"@thombruce/nuxt-taxonomies@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@thombruce/nuxt-taxonomies/-/nuxt-taxonomies-0.1.3.tgz#e69ecfae991cc351be993e86203b2865bd3c6819"
+  integrity sha512-LJCdbwgAGLqbTGlzXjPRiVildYGzfVCKhsQfjxe3BwgtgOyU84/6uBe8Kat4ovDYf5IGoQ/BUkiw1ddM7lNVgw==
   dependencies:
     lodash "^4.17.21"
 
 "@thombruce/tnt@https://github.com/thombruce/tnt":
   version "0.1.0"
-  resolved "https://github.com/thombruce/tnt#6f70bafe54db22eda4bee2df86249f3f212892fc"
+  resolved "https://github.com/thombruce/tnt#454675c556ca89c48ea7c646289a78ae5ddc9078"
   dependencies:
     "@fortawesome/free-solid-svg-icons" "^5.15.3"
     "@nuxtjs/color-mode" "^2.0.9"
@@ -1658,25 +1658,25 @@
     pug-plain-loader "^1.1.0"
     simple-icons "^5.0.0"
 
-"@thombruce/vue-fountain@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.2.3.tgz#1c1a86a8b4bdb848637a4ac5b772f30b471aec35"
-  integrity sha512-J5/FEtdIc5IbsfemMveVibFSjiNm+OM+DMRks2lVLrcBp+m3YtDPLJhtRIZeJ2cUE2n+H6/+1TkI+UD2YYwX9A==
+"@thombruce/vue-fountain@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-fountain/-/vue-fountain-0.2.4.tgz#0af36010685a00661e41daca6385d872ef5418c1"
+  integrity sha512-brVa9ToJ3eEPR7d2Xf0W+AHjCFFGdsgOcTNwcUsEnEU8vXp6rKw5tyF6A6kM+wQOi3CDLEi3bsaiywHUlGg1IQ==
   dependencies:
     "@thombruce/fountain-js" "^1.5.1"
 
-"@thombruce/vue-playfair@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@thombruce/vue-playfair/-/vue-playfair-0.1.0.tgz#4299200ae12fca1b4a3c0170a3250318126ddecf"
-  integrity sha512-V/h6TsqXPonZT6jkVsq6/jRyAkFa8XET0AKg1zeNobA51yNIC11ceeszZTt06HkshABRqRxLhifG2jbX9B31xQ==
+"@thombruce/vue-playfair@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-playfair/-/vue-playfair-0.1.1.tgz#7ce04c537559cc177eec1e427e18ff88a0b15823"
+  integrity sha512-hjpnV/pYlBgSwa5pNE95+9O2XHY+PyU4Y3MmJSphVznqJQkT8A1yFsEaEERKC43ttRoKSav0wCh5nL7QVsE/xQ==
   dependencies:
     chart.js "2.9.4"
     vue-chartjs "^3.5.1"
 
-"@thombruce/vue-timepiece@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@thombruce/vue-timepiece/-/vue-timepiece-0.1.3.tgz#1ff1cf8dc07b250952cd15c686c1e5293dbebbfc"
-  integrity sha512-DqQ0WNjj2UTnsuQmrk6YgVUXMtMtGRBla9BKKvLe95dMe2cPwIg8pjH8iZlqDeFxBMi75HQdpgzlzM2B5G/6dg==
+"@thombruce/vue-timepiece@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@thombruce/vue-timepiece/-/vue-timepiece-0.1.4.tgz#676d5751fcf5a9825e414d13679b32403d07f781"
+  integrity sha512-VfYJ//InOxubl//xUbJb+jsr7K2Tb4Eg45LqQqPOFHOxmYMa49/7lUdUbOuonrVWpLOVztE2P1WL2VPMoTYbpA==
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -10051,9 +10051,9 @@ simple-get@^3.0.3, simple-get@^3.1.0:
     simple-concat "^1.0.0"
 
 simple-icons@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-5.0.0.tgz#c47d06ee4efd62cc610565678bfbcac97bebf987"
-  integrity sha512-GO1/oSE8MRAoxd+S8L9JHh48lJ+C2a5Uvq2+lF2bImFG/7joAEA7MfzSiTTcyAW6gVTEyIqe6OiGOQIHwdq3ew==
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-5.1.0.tgz#2bcf4e847fe95d61d5cffe456a2d9a66954220cf"
+  integrity sha512-eYaG95mbAtLCLdIhlXlTsFM+AwVJEwkCDHDGJIYxv8MMgdVcbKH0EligeqKcrbtGlDg06rGtJ5rL22mj0p3wtw==
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
