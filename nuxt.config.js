@@ -36,6 +36,7 @@ export default {
   buildModules: [
     '@nuxt/image',
     "@thombruce/tnt",
+    "@thombruce/nuxt-taxonomies",
     "@thombruce/vue-timepiece/nuxt",
     "@thombruce/vue-fountain/nuxt",
     "@thombruce/vue-playfair/nuxt"

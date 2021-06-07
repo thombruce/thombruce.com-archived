@@ -1636,6 +1636,13 @@
   resolved "https://registry.yarnpkg.com/@thombruce/fountain-js/-/fountain-js-1.5.1.tgz#50dd0d9c5a79a61b293a5a97c220dc071a4d06cd"
   integrity sha512-/7cyazHt6Z4iZh/cF4t0dhIYWo1tuPorTyRnLZR5LwHh2ReSe/2JDzFsUT2ZuUR/iPmolcGhj6imkuXciaCXNQ==
 
+"@thombruce/nuxt-taxonomies@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@thombruce/nuxt-taxonomies/-/nuxt-taxonomies-0.1.2.tgz#d41913c7314bef897556d059bdf0ce0d8166943b"
+  integrity sha512-TkApTmqOYIk2jcRZRyHjBeZot8DczYJjgBVqEbFcuOfEKtLbDd4zPuhKzWCbs0gh5XL4Ix/Z228mPIbKJkygYQ==
+  dependencies:
+    lodash "^4.17.21"
+
 "@thombruce/tnt@https://github.com/thombruce/tnt":
   version "0.1.0"
   resolved "https://github.com/thombruce/tnt#6f70bafe54db22eda4bee2df86249f3f212892fc"

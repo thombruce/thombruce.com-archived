@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.13",
+    "@thombruce/nuxt-taxonomies": "^0.1.2",
     "@thombruce/tnt": "https://github.com/thombruce/tnt"
   }
 }
