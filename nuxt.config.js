@@ -16,6 +16,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css', integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X', crossorigin: 'anonymous' }
+    ],
+    script: [
+      { src: 'https://analytics.thombruce.com/umami.js', 'data-website-id': 'e50b8ea0-e863-4acb-9991-ac3eb763d47c', async: true, defer: true }
     ]
   },
 
