@@ -1,19 +1,3 @@
 <template lang='pug'>
-article
-  header
-    NuxtImg(v-if='page.image' :src='page.image' width='100vw')
-    h1 {{ page.title }}
-    time(:datetime='page.createdAt') {{ page.createdAt }}
-
-  ArticleContent(:article='page')
+TntPagesPage
 </template>
-
-<script>
-export default {
-  async asyncData({ $content, params }) {
-    const page = await $content(params.page).fetch()
-
-    return { page }
-  }
-}
-</script>

@@ -10,7 +10,7 @@ article
         |
         time(:datetime='project.endedAt') {{ project.endedAt }}
 
-  ArticleContent(:article='project')
+  TntContentBody(:article='project')
 </template>
 
 <script>

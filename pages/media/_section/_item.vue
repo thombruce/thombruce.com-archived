@@ -5,7 +5,7 @@ article
     h1 {{ item.title }}
     time(:datetime='item.releasedAt') {{ item.releasedAt }}
 
-  ArticleContent(:article='item')
+  TntContentBody(:article='item')
 </template>
 
 <script>
