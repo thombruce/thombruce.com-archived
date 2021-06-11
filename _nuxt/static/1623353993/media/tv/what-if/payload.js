@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/media/tv/what-if", (function(a){return {data:[{item:{slug:"what-if",title:"What If...?",releasedAt:null,toc:[],body:{type:"root",children:[]},dir:"\u002Fmedia\u002Ftv",path:"\u002Fmedia\u002Ftv\u002Fwhat-if",extension:".md",createdAt:a,updatedAt:a},_img:{}}],fetch:{},mutations:[]}}("2021-06-10T19:36:54.498Z")));
