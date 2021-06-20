@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/blog/categories", {data:[{_img:{}}],fetch:{"0":{slug:"categories",article:[{slug:"journal",title:"Journal"},{slug:"culture",title:"Culture"}]}},mutations:[]});
