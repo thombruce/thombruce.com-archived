@@ -82,16 +82,7 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {
-    markdown: {
-      remarkPlugins: [
-        'remark-math'
-      ],
-      rehypePlugins: [
-        'rehype-katex'
-      ]
-    }
-  },
+  content: {},
 
   fontawesome: {
     icons: {

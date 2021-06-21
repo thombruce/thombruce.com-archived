@@ -17,9 +17,7 @@
     "@thombruce/vue-timepiece": "^0.1.4",
     "core-js": "^3.13.1",
     "nuxt": "^2.15.6",
-    "nuxt-leaflet": "^0.0.25",
-    "rehype-katex": "^5.0.0",
-    "remark-math": "^4.0.0"
+    "nuxt-leaflet": "^0.0.25"
   },
   "devDependencies": {
     "@thombruce/tnt": "https://github.com/thombruce/tnt"
