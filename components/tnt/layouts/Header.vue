@@ -27,11 +27,6 @@ export default {
           to: '/code'
         },
         {
-          icon: 'film',
-          title: 'Screenplays',
-          to: '/screenplays'
-        },
-        {
           icon: 'info',
           title: 'About',
           to: '/about'
