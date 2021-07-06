@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tags", {data:[{slug:"tags",page:[{slug:"star-wars",title:"Star Wars"},{slug:"film",title:"Film"}],_img:{"/_ipx/thombruce.png?w=350":"\u002F_nuxt\u002Fimage\u002F642531.png"}}],fetch:{},mutations:[]});

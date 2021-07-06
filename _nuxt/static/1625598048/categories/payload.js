@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/categories", {data:[{slug:"categories",page:[{slug:"culture",title:"Culture"}],_img:{"/_ipx/thombruce.png?w=350":"\u002F_nuxt\u002Fimage\u002F642531.png"}}],fetch:{},mutations:[]});

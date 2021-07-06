@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags", {data:[{slug:"tags",page:[{slug:"star-wars",title:"Star Wars"},{slug:"film",title:"Film"}],_img:{}}],fetch:{},mutations:[]});
