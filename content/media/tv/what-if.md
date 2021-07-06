@@ -1,4 +1,0 @@
----
-title: 'What If...?'
-releasedAt:
----
