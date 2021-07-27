@@ -5,6 +5,9 @@ div
       header
         h2
           a(:href='article.url' target='_blank') {{ article.title }}
+          |
+          |
+          small.inline-block.rounded-full.px-2.bg-gray-500.text-light {{ site(article.url) | titleize }}
         time(:datetime='article.date_modified') {{ article.date_modified | toLocaleString }}
       div(v-if='article.summary')
         p {{ article.summary }}
@@ -16,6 +19,23 @@ div
 export default {
   props: [
     'articles'
-  ]
+  ],
+  methods: {
+    site (url) {
+      const host = new URL(url).hostname
+      switch (host) {
+        case 'beer.thombruce.com':
+          return 'Free as in Beer'
+        case 'code.thombruce.com':
+          return 'Undefined'
+        case 'ink.thombruce.com':
+        case 'happy.thombruce.com':
+        case 'popcorn.thombruce.com':
+          return host.split('.')[0]
+        default:
+          return host.split('.')[0]
+      }
+    }
+  }
 }
 </script>
