@@ -2,15 +2,13 @@
 header
   div
     NuxtLink(to='/')
-      NuxtImg(v-if='$colorMode.value === `dark`' src='/thombruce_dark.png' width='350px')
-      NuxtImg(v-else src='/thombruce.png' width='350px')      
-  div
+      NuxtImg(src='/thombruce_dark.png' width='350px')
+      // NuxtImg(v-else src='/thombruce.png' width='350px')
+  .navbar
     nav
-      ul
-        li(v-for='(item, i) in items' :key='i')
-          NuxtLink(:to='item.to')
-            span {{ item.title }}
-    TntUIDarkmodeToggle
+      NuxtLink.btn.btn-ghost(v-for='(item, i) in items' :key='i' :to='item.to')
+        span {{ item.title }}
+    TntUIThemeToggle
 </template>
 
 <script>

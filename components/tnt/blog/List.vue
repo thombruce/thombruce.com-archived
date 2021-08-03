@@ -7,7 +7,7 @@ div
           a(:href='article.url' target='_blank') {{ article.title }}
           |
           |
-          small.inline-block.rounded-full.px-2.bg-gray-500.text-light {{ site(article.url) | titleize }}
+          span.badge {{ site(article.url) | titleize }}
         time(:datetime='article.date_modified') {{ article.date_modified | toLocaleString }}
       div(v-if='article.summary')
         p {{ article.summary }}

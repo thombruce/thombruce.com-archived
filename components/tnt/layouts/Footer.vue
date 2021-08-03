@@ -36,7 +36,7 @@ export default {
 
 <style lang='postcss' scoped>
 footer {
-  @apply py-3;
+  @apply py-3 bg-neutral text-neutral-content;
   & .social {
     @apply text-3xl;
     & ul {
@@ -47,7 +47,7 @@ footer {
     }    
   }
   & .copyright {
-    @apply text-center text-sm text-gray-400 dark:text-gray-500;
+    @apply text-center text-sm;
   }
 }
 </style>
