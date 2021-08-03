@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/guestbook", {data:[{_img:{"/_ipx/thombruce.png?w=350":"\u002F_nuxt\u002Fimage\u002F642531.png"}}],fetch:{"0":{}},mutations:[["staticman\u002Fpush",{path:"\u002F_data\u002Fguestbook",comments:[]}]]});
