@@ -87,6 +87,16 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
+  image: {
+    domains: [
+      'https://popcorn.thombruce.com',
+      'https://ink.thombruce.com',
+      'https://happy.thombruce.com',
+      'https://code.thombruce.com',
+      'https://beer.thombruce.com'
+    ]
+  },
+
   fontawesome: {
     icons: {
       // regular: true, // TODO: List only the icons used!
