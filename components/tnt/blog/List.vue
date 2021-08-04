@@ -12,7 +12,7 @@ div
             |
             |
             span.badge {{ site(article.url) | titleize }}
-          time(:datetime='article.date') {{ article.date | toLocaleString }}
+          time(:datetime='article.date_modified') {{ article.date_modified | toLocaleString }}
         div(v-if='article.summary')
           p {{ article.summary }}
   div.text-center(v-else)
