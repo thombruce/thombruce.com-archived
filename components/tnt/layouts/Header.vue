@@ -22,11 +22,6 @@ export default {
           to: '/blog'
         },
         {
-          icon: 'code',
-          title: 'Code',
-          to: '/code'
-        },
-        {
           icon: 'info',
           title: 'About',
           to: '/about'
