@@ -11,7 +11,7 @@ div
             a(:href='article.url' target='_blank') {{ article.title }}
             |
             |
-            span.badge {{ site(article.url) | titleize }}
+            span.badge {{ site(article.url) }}
           time(:datetime='article.date_modified') {{ article.date_modified | toLocaleString }}
         div(v-if='article.summary')
           p {{ article.summary }}
@@ -20,6 +20,8 @@ div
 </template>
 
 <script>
+import { startCase } from 'lodash'
+
 export default {
   props: [
     'articles'
@@ -37,9 +39,9 @@ export default {
         case 'ink.thombruce.com':
         case 'happy.thombruce.com':
         case 'popcorn.thombruce.com':
-          return host.split('.')[0]
+          return startCase(host.split('.')[0])
         default:
-          return host.split('.')[0]
+          return startCase(host.split('.')[0])
       }
     }
   }
