@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog", {data:[{articles:[],_img:{"/_ipx/thombruce_dark.png?w=350":"\u002F_nuxt\u002Fimage\u002F06871a.png"}}],fetch:{},mutations:[]});
