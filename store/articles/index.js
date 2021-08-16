@@ -37,11 +37,13 @@ export const actions = {
     const ink = await this.$axios.$get('https://ink.thombruce.com/feed.json')
     const happy = await this.$axios.$get('https://happy.thombruce.com/feed.json')
     const undefined = await this.$axios.$get('https://code.thombruce.com/feed.json')
+    const ordahhh = await this.$axios.$get('https://ordahhh.thombruce.com/feed.json')
     const articles = [
       ...popcorn.items,
       ...ink.items,
       ...happy.items,
-      ...undefined.items
+      ...undefined.items,
+      ...ordahhh.items
     ]
 
     commit('push', { articles })

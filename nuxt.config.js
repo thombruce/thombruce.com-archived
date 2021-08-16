@@ -93,7 +93,8 @@ export default {
       'https://ink.thombruce.com',
       'https://happy.thombruce.com',
       'https://code.thombruce.com',
-      'https://beer.thombruce.com'
+      'https://beer.thombruce.com',
+      'https://ordahhh.thombruce.com'
     ]
   },
 

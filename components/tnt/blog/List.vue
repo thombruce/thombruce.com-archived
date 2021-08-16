@@ -32,6 +32,8 @@ export default {
           return 'Free as in Beer'
         case 'code.thombruce.com':
           return 'Undefined'
+        case 'ordahhh.thombruce.com':
+          return 'Ordahhh!'
         case 'ink.thombruce.com':
         case 'happy.thombruce.com':
         case 'popcorn.thombruce.com':
