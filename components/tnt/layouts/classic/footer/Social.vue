@@ -1,11 +1,9 @@
 <template lang='pug'>
-footer
-  .social
-    ul
-      li(v-for='(item, i) in social' :key='i')
-        a(:href='item.to' target='_blank')
-          TntSimpleIcon(:icon='item.icon')
-  .copyright &copy; Thom Bruce 1989 - {{ new Date().getFullYear() }}
+.social
+  ul
+    li(v-for='(item, i) in social' :key='i')
+      a(:href='item.to' target='_blank')
+        TntSimpleIcon(:icon='item.icon')
 </template>
 
 <script>
@@ -35,19 +33,13 @@ export default {
 </script>
 
 <style lang='postcss' scoped>
-footer {
-  @apply py-3 bg-neutral text-neutral-content;
-  & .social {
-    @apply text-3xl;
-    & ul {
-      @apply flex justify-center;
-      & li a {
-        @apply block px-4;
-      }
-    }    
-  }
-  & .copyright {
-    @apply text-center text-sm;
-  }
+.social {
+  @apply text-3xl;
+  & ul {
+    @apply flex justify-center;
+    & li a {
+      @apply block px-4;
+    }
+  }    
 }
 </style>
