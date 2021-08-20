@@ -36,13 +36,13 @@ export const actions = {
     const popcorn = await this.$axios.$get('https://popcorn.thombruce.com/feed.json')
     const ink = await this.$axios.$get('https://ink.thombruce.com/feed.json')
     const happy = await this.$axios.$get('https://happy.thombruce.com/feed.json')
-    const undefined = await this.$axios.$get('https://code.thombruce.com/feed.json')
+    const code = await this.$axios.$get('https://code.thombruce.com/feed.json')
     const ordahhh = await this.$axios.$get('https://ordahhh.thombruce.com/feed.json')
     const articles = [
       ...popcorn.items,
       ...ink.items,
       ...happy.items,
-      ...undefined.items,
+      ...code.items,
       ...ordahhh.items
     ]
 

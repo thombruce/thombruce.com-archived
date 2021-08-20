@@ -33,7 +33,7 @@ export default {
         case 'beer.thombruce.com':
           return 'Free as in Beer'
         case 'code.thombruce.com':
-          return 'Undefined'
+          return 'Code'
         case 'ordahhh.thombruce.com':
           return 'Ordahhh!'
         case 'ink.thombruce.com':
