@@ -12,7 +12,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.5",
     "@nuxtjs/pwa": "^3.3.5",
-    "@thombruce/vue-fountain": "^0.2.4",
+    "@thombruce/vue-fountain": "^1.5.3",
     "@thombruce/vue-playfair": "^0.1.1",
     "@thombruce/vue-timepiece": "^0.1.4",
     "core-js": "^3.16.2",
