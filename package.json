@@ -20,6 +20,6 @@
     "nuxt-leaflet": "^0.0.25"
   },
   "devDependencies": {
-    "@thombruce/nuxt-tnt": "^0.1.19"
+    "@thombruce/nuxt-tnt": "^0.1.26"
   }
 }
